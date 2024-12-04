@@ -1,0 +1,990 @@
+---
+title: "Revisiting C*F*~0~ in Danish"
+authors: 
+  - name:
+      given: 'Rasmus'
+      family: 'Puggaard-Rode'
+  - name:
+      given: 'James'
+      family: 'Kirby'
+  - name:
+      given: 'Nicolai'
+      family: 'Pharao'
+date: '5 December 2024'
+format: 
+  revealjs:
+    df-print: kable
+    footer: 'PhD und Postdoc Kolloquium, IPS'
+    incremental: true
+    slide-number: true
+    scrollable: false
+    theme: simple
+    transition: fade
+bibliography: references.bib
+csl: css/journal-of-linguistics.csl
+---
+
+## Roadmap
+
+- A brief recap of C*F*~0~
+
+- What's so interesting about Danish?
+
+- Research questions
+
+- Methods and materials
+
+- Discussion and conclusions
+
+## A brief recap of C*F*~0~
+
+- Some segments exert a localized influence on pitch.
+
+- This talk is about co-intrinsic *F*~0~ (C*F*~0)~, in this case the effect of laryngeal contrast on pitch.
+
+- Refers to either
+
+  - *F*~0~ *raising* after [*voiceless*]{style="color:darkorange;"} stops
+  - *F*~0~ *lowering* after [*voiced*]{style="color:blue;"} stops
+  - or both
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@kingston2007
+:::
+:::
+
+## A brief recap of C*F*~0~
+
+```{r}
+polynoms <- poly(1:100, degree = 3)
+nasal <- rep(1, 100)
+b <- nasal + (polynoms[,1]/2) + (-polynoms[,2]/5) + (polynoms[,3] / 10)
+p <- nasal + (-polynoms[,1]/2) + (polynoms[,2]/5) + (-polynoms[,3] / 10)
+b[36:100] <- 1
+p[36:100] <- 1
+plot(nasal, type='l', ylim = c(0.8, 1.2), 
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     lwd=2, xaxt='n', yaxt='n', cex.lab = 1.2)
+text(10, 1.04, 'sonorant', font=2, cex = 1.3)
+```
+
+
+## A brief recap of C*F*~0~
+
+```{r}
+plot(b, type='l', ylim = c(0.8, 1.2), 
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     col='blue', lwd=2,
+     xaxt='n', yaxt='n', cex.lab = 1.2)
+lines(nasal, lwd=2)
+text(10, 1.04, 'sonorant', font=2, cex = 1.3)
+text(15, 0.88, 'voiced', col='blue', font=2, cex = 1.3)
+```
+
+## A brief recap of C*F*~0~
+
+```{r}
+plot(b, type='l', ylim = c(0.8, 1.2), 
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     col='blue', lwd=2,
+     xaxt='n', yaxt='n', cex.lab = 1.2)
+lines(p, col='darkorange', lwd=2)
+lines(nasal, lwd=2)
+text(15, 1.14, 'voiceless', col='darkorange', font=2, cex = 1.3)
+text(10, 1.04, 'sonorant', font=2, cex = 1.3)
+text(15, 0.88, 'voiced', col='blue', font=2, cex = 1.3)
+```
+
+## What causes C*F*~0~?
+
+- *F*~0~ raising after [voiceless]{style="color:darkorange;"} stops due to
+
+  - Tensing of the cricothyroid to inhibit voicing?
+  - Abrupt activity of vocalis to reinitiate voicing?
+  
+- *F*~0~ lowering during/after [voiced]{style="color:blue;"} stops due to
+
+  - Larynx lowering?
+  - Vocal fold slackening?
+  - "Deliberate" enhancement of a [voice] feature?
+  
+::: {.aside}
+::: {style="font-size: 70%;"}
+@ewan1976; @hombert1979; @goldstein1986; @lofqvist1989; @kingston1994; @honda1999; @hoole2006; @hoole2011
+:::
+:::
+
+## C*F*~0~ and other constraints on the larynx
+
+- Results of C*F*~0~ studies are more mixed in 
+
+  - languages with complex laryngeal contrasts
+  - languages with phonological tone
+  
+- Some previous studies suggest that *F*~0~ raising is enhanced or contingent on a synergistic pitch environment
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@xu2003; @francis2006; @hanson2009; @chen2011jphon; @kirby2018jphon; @shi2020diss; @shi2020jasa
+:::
+:::
+
+## What's so interesting about Danish?
+
+- There's a laryngeal contrast between two series of stops
+
+  - [Voiceless unaspirated /b d g/]{style="color:blue;"}
+  - [Voiceless aspirated /p t k/]{style="color:darkorange;"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@frokjaerjensen1971; @fischerjorgensen1974lips; @hutters1985; @puggaardrode2022labphon
+:::
+:::
+
+## What's so interesting about Danish?
+
+![](img/spreading.png){width="400" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@hutters1985
+:::
+:::
+
+## What's so interesting about Danish?
+
+- The laryngeal articulation of the contrast is *very* well-documented
+
+  - This includes multiple EMG studies of a broad range of laryngeal muscles
+  
+## Limited cricothyroid activity
+
+![](img/ct-activity.png){width="1000" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@hutters1985
+:::
+:::
+
+## Extensive PCA activity/INT suppression
+
+![](img/pca-int-activity.png){width="1000" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@hutters1985
+:::
+:::
+
+## Suppressed vocalis activity
+
+![](img/voc-activity.png){width="1000" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@hutters1985
+:::
+:::
+
+## What's so interesting about Danish?
+
+- Some (but not all) varieties cue stress with a low--high pitch contour
+
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@jeel1975; @thorsen1983; @petersen1983; @fischerjorgensen1989; @gronnum1990; @pena2023
+:::
+:::
+
+## What's so interesting about Danish?
+
+![](img/intonation-variation.png){width="1000" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@thorsen1984
+:::
+:::
+
+## 
+
+```{r}
+#| error: false
+#| warning: false
+
+library(tidyverse)
+library(patchwork)
+library(eurostat)
+
+geodata <- get_eurostat_geospatial(resolution = '1', nuts_level = 3)
+geodataDK <- geodata[geodata$CNTR_CODE=='DK',]
+geodataDE <- geodata[geodata$CNTR_CODE=='DE',]
+geodataSE <- geodata[geodata$CNTR_CODE=='SE',]
+jAreas <- c('Sydjylland', 'Vestjylland', 'Østjylland')
+jutland <- geodataDK[geodataDK$NUTS_NAME %in% jAreas,]
+zAreas <- c('Nordsjælland', 'Østsjælland', 'Vest- og Sydsjælland', 
+            'Byen København', 'Københavns omegn')
+zealand <- geodataDK[geodataDK$NUTS_NAME %in% zAreas,]
+restofDK <- geodataDK[!geodataDK$NUTS_NAME %in% c(jAreas, zAreas),]
+mapDK <- ggplot() + 
+  geom_sf(data=jutland, fill='wheat') +
+  geom_sf(data=zealand, fill='thistle1') + 
+  geom_sf(data=restofDK, fill='lightgrey') +
+  geom_sf(data=geodataDE, fill='lightgrey') +
+  geom_sf(data=geodataSE, fill='lightgrey') + 
+  annotate(geom='point', x=12.3, y=55.4, size=4, col='red') +
+  annotate(geom='label', x=12.3, y=55.1, label='Copenhagen\n(Zealand)') +
+  annotate(geom='point', x=10.2, y=56.1, size=4, col='red') + 
+  annotate(geom='label', x=10.2, y=55.8, label='Aarhus\n(Jutland)') +
+  xlim(8, 13) +
+  ylim(54.7, 58) + 
+  theme_bw() +
+  theme(panel.background=element_rect(fill='lightblue'),
+        panel.border=element_blank(),
+        panel.grid.major=element_blank(),
+        panel.grid.minor=element_blank(),
+        axis.text.y=element_blank(),
+        axis.text.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        axis.ticks=element_blank())
+```
+
+```{r}
+mapDK
+```
+
+
+## What's so interesting about Danish?
+
+::: nonincremental
+- Some (but not all) varieties cue stress with a low--high pitch contour
+
+- Contrastive voice quality (*stød*) places competing demands on the larynx and *F*~0~ trajectory
+:::
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@jeel1975; @thorsen1983; @petersen1983; @fischerjorgensen1989; @gronnum1990; @pena2023
+:::
+:::
+
+## What's so interesting about Danish?
+
+![](img/stod-f0.png){width="1000" fig-align="center"}
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@fischerjorgensen1987
+:::
+:::
+
+## What's so interesting about Danish?
+
+::: nonincremental
+- Contrastive voice quality (*stød*) places competing demands on the larynx and *F*~0~ trajectory
+
+- Some (but not all) varieties cue stress with a low--high pitch contour
+
+- Most previous studies find evidence of C*F*~0~ effects in Danish
+
+:::
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@jeel1975; @thorsen1983; @petersen1983; @fischerjorgensen1989; @gronnum1990; @pena2023
+:::
+:::
+
+## Research questions
+
+RQ1: What kind of C*F*~0~ effects are found in Danish?
+
+## Hypotheses
+
+If C*F*~0~ is a deliberate cue to a [voice] feature: /[p]{style="color:darkorange;"} ~ m/ > /[b]{style="color:blue;"}/
+
+
+```{r}
+plot(NULL, ylim = c(0.8, 1.2), xlim = c(1, 100),
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     xaxt='n', yaxt='n', cex.lab = 1.2)
+lines(b, lwd=2, col = 'blue')
+lines(nasal, lwd=2)
+lines(nasal, lwd=2, col='darkorange', lty='dashed')
+text(5, 1.04, '/m/', font=2, cex = 1.3)
+text(15, 1.035, '/p/', font=2, cex = 1.3, col='darkorange')
+text(15, 0.88, '/b/', col='blue', font=2, cex = 1.3)
+```
+
+## Hypotheses
+
+If C*F*~0~ is a side effect of cricothyroid tensing: /[p]{style="color:darkorange;"}/ > /[b]{style="color:blue;"} ~ m/
+
+```{r}
+plot(NULL, ylim = c(0.8, 1.2), xlim = c(1, 100),
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     xaxt='n', yaxt='n', cex.lab = 1.2)
+lines(p, lwd=2, col = 'darkorange')
+lines(nasal, lwd=2)
+lines(nasal, lwd=2, col='blue', lty='dashed')
+text(5, 1.04, '/m/', font=2, cex = 1.3)
+text(15, 1.04, '/b/', font=2, cex = 1.3, col='blue')
+text(15, 1.14, '/p/', col='darkorange', font=2, cex = 1.3)
+```
+
+## Hypotheses
+
+If C*F*~0~ is a side effect of inhibiting phonation: /[p]{style="color:darkorange;"}/ > /[b]{style="color:blue;"}/ > /m/
+
+```{r}
+plot(p, ylim = c(0.8, 1.2), xlim = c(1, 100),
+     ylab=expression(italic('F')[0]), xlab='Time', 
+     xaxt='n', yaxt='n', cex.lab = 1.2, col = 'darkorange', type='l', lwd = 2)
+lines((p + nasal) / 2, lwd=2, col = 'blue')
+lines(nasal, lwd=2)
+text(5, 1.02, '/m/', font=2, cex = 1.3)
+text(8, 1.08, '/b/', font=2, cex = 1.3, col='blue')
+text(13, 1.12, '/p/', col='darkorange', font=2, cex = 1.3)
+```
+
+## Research questions
+
+RQ2: How do stress and high pitch respectively affect C*F*~0~?
+
+- H2a: Stress enhances C*F*~0~ regardless of the pitch target
+
+  - C*F*~0~ effects will not be affected by variety or global pitch environment
+  
+- H2b: Intonational high pitch targets enhance C*F*~0~
+
+  - C*F*~0~ effects are stronger in Jutland speakers
+  - Particularly when the word carries a high pitch target
+
+## Research questions
+
+RQ3: How do local phonological demands on the larynx and pitch level affect C*F*~0~?
+
+- H3a: Non-intonational high pitch targets enhance C*F*~0~
+  - C*F*~0~ effects are stronger in syllables with stød
+  
+- H3b: Non-intonational high pitch targets reduce C*F*~0~
+  - C*F*~0~ effects are stronger in syllables without stød, where there is more "room" for pitch modulation
+  
+## Speech materials
+
+132 alternative questions
+
+- e.g. *Er det* ***dine*** *eller er det* ***mine?*** 
+  - 'Are they yours or are they mine?'
+  
+- Crossing
+  - *onset category*: nasal, [unaspirated]{style="color:blue;"}, [aspirated]{style="color:darkorange;"}
+  - *place*: bilabial, alveolar
+  - *vowel height*: high, low
+  - *stød*: present, absent
+  
+## Participants and procedure
+
+- 17 speakers of Jutland Danish
+- 12 speakers of Zealand Danish
+- Recordings made at University of Copenhagen, Aarhus University
+  - Using SpeechRecorder
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@speechrecorder
+:::
+:::
+
+## Pre-processing and annotation
+
+- Force alignment using Autophon DanFA
+
+- Audio and annotations converted to EMU database
+
+- Stop-related landmarks predicted using `getVOT` in R and hand-corrected
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@emusdms; @getVOT; @danfa; @autophon
+:::
+:::
+
+## Pre-processing and annotation
+
+```{r}
+library(getVOT)
+
+params <- pos_setParams('data/getVOT_training', cat=TRUE, verbose = FALSE)
+```
+
+## Pre-processing and annotation
+
+```{r}
+#| warning: false
+#| error: false
+
+library(emuR)
+library(praatpicture)
+
+db <- load_emuDB('../final_emuDB', verbose = FALSE)
+```
+
+```{r}
+emupicture(db, '_0003', 
+           bundle='003pEre-asp-bilab-low-nst-NA-NA-NA-NA-NA', 
+           start=1.75, end=2.2, 
+           tg_tiers=c('phone', 'landmarks'), 
+           tg_focusTier='landmarks', 
+           tg_focusTierColor = 'red', tg_focusTierLineType = 'dashed', 
+           wave_color = 'grey', wave_lineWidth = 0.7, 
+           spec_freqRange = c(0,6000), ps = 16)
+```
+
+
+## Acoustic analysis
+
+- Pitch calculated using cross-validation method
+
+  - Average of Praat and REAPER estimates
+    - with speaker-specific pitch floor and ceiling
+  - Discarded frames when either returned `NA`
+  - Discarded frames where estimates differed by more than 20%
+  - Trajectories with adjacent differences of ±1.5 *z* discarded
+  
+::: {.aside}
+::: {style="font-size: 70%;"}
+@boersma1993; @reaper; @hirst2022
+:::
+:::
+
+## Domain of analysis
+
+- @xu2021 propose that pitch peaks are always timed to stop releases
+  - Domain of analysis starts at the stop release
+  
+- This does not appear to be true of Danish
+
+## Domain of analysis
+
+```{r}
+#| warning: false
+
+sl <- query(db, 'landmarks == rel')
+sl$end <- query(db, 'landmarks == offset')$start
+sl$sample_end <- query(db, 'landmarks == offset')$sample_start
+sl$clo <- query(db, 'landmarks == clo')$start
+
+sl <- sl %>%
+  mutate(bndl_info = str_sub(bundle, start=4)) %>%
+  separate(bndl_info, into=c(
+    'foc_item', 'foc_voi', 'foc_poa', 'foc_vheight', 'foc_st',
+    'nfoc_item', 'nfoc_voi', 'nfoc_poa', 'nfoc_vheight', 'nfoc_st'))
+
+sl$ord <- rep(NA, nrow(sl))
+for (i in 2:nrow(sl)) {
+  bndl <- sl$bundle[i]
+  n_item <- nrow(filter(sl, bundle==bndl))
+  if (n_item > 1) {
+    if (sl$bundle[i-1] == sl$bundle[i]) {
+      sl$ord[i] <- 2
+    } else {
+      sl$ord[i] <- 1
+    }
+  }
+}
+
+sl <- sl %>%
+  mutate(cond = case_when(
+    foc_item == 'NA' ~ 'nfoc',
+    nfoc_item == 'NA' ~ 'foc',
+    ord == 1 ~ 'foc',
+    ord == 2 ~ 'nfoc'),
+    item = case_when(
+      foc_item == 'NA' ~ nfoc_item,
+      nfoc_item == 'NA' ~ foc_item,
+      ord == 1 ~ foc_item,
+      ord == 2 ~ nfoc_item),
+    voi = case_when(
+      foc_item == 'NA' ~ nfoc_voi,
+      nfoc_item == 'NA' ~ foc_voi,
+      ord == 1 ~ foc_voi,
+      ord == 2 ~ nfoc_voi),
+    poa = case_when(
+      foc_item == 'NA' ~ nfoc_poa,
+      nfoc_item == 'NA' ~ foc_poa,
+      ord == 1 ~ foc_poa,
+      ord == 2 ~ nfoc_poa),
+    vheight = case_when(
+      foc_item == 'NA' ~ nfoc_vheight,
+      nfoc_item == 'NA' ~ foc_vheight,
+      ord == 1 ~ foc_vheight,
+      ord == 2 ~ nfoc_vheight),
+    st = case_when(
+      foc_item == 'NA' ~ nfoc_st,
+      nfoc_item == 'NA' ~ foc_st,
+      ord == 1 ~ foc_st,
+      ord == 2 ~ nfoc_st)
+  ) %>%
+  select(-c(nfoc_item, foc_item, nfoc_voi, foc_voi, nfoc_poa, foc_poa,
+            nfoc_vheight, foc_vheight, nfoc_st, foc_st, ord))
+
+sl_vo <- query(db, 'landmarks == vo')
+
+sl_nas <- sl %>% filter(voi == 'nasal') %>%
+  mutate(vo = 0)
+sl_stop <- sl %>% filter(voi != 'nasal') %>%
+  mutate(vo = sl_vo$start)
+sl <- rbind(sl_nas, sl_stop)
+
+sl <- sl %>% mutate(
+  vdur = ifelse(voi == 'nasal', end - start, end - vo),
+  opdur = end - start,
+  vot = ifelse(voi == 'nasal', NA, vo - start),
+  cldur = start - clo
+)
+
+meta <- read.delim('data/meta.csv', sep=';')
+sl <- left_join(sl, meta, by = 'session')
+
+td_praat <- get_trackdata(db, sl, ssffTrackName='f0', verbose = FALSE)
+td_praat[which(td_praat$T1 == 0),'T1'] <- NA
+
+td_reaper <- get_trackdata(db, sl, ssffTrackName='rf0', verbose = FALSE)
+td_reaper[which(td_reaper$T1 == -1),'T1'] <- NA
+
+td <- td_praat %>% rename(praat_f0 = T1)
+td$reaper_f0 <- td_reaper$T1
+
+td <- td %>% mutate(
+  low_est = ifelse(reaper_f0 < praat_f0, reaper_f0, praat_f0),
+  f0_diff = (reaper_f0-praat_f0)/low_est,
+  f0 = case_when(
+    is.na(f0_diff) ~ NA,
+    abs(f0_diff) > 0.2 ~ NA,
+    times_orig < vo ~ NA,
+    TRUE ~ (praat_f0+reaper_f0)/2
+  )) %>% group_by(session) %>%
+  mutate(uppF0 = mean(f0, na.rm=T) + 3*sd(f0, na.rm=T),
+         lowF0 = mean(f0, na.rm=T) - 3*sd(f0, na.rm=T),
+         f0 = ifelse(f0 > uppF0 | f0 < lowF0, NA, f0)) %>%
+  mutate(zf0 = as.numeric(scale(f0))) %>%
+  ungroup()
+
+sl$voi <- factor(sl$voi, levels = c('nasal', 'unasp', 'asp'))
+sl %>% pivot_longer(cols = c(opdur, vdur), names_to = 'landmark',
+                    values_to='durcomp') %>% 
+  ggplot() +
+  aes(x=voi, y=durcomp, fill=voi) +
+  geom_jitter(aes(col=voi), alpha=0.1) +
+  geom_violin() +
+  facet_grid(~landmark,
+             labeller = labeller(
+               landmark = c(opdur = 'Stop release', 
+                            vdur = 'Onset of voicing'))) +
+  xlab('') +
+  ylab('Trajectory duration (ms)') +
+  scale_color_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated')) +
+  scale_fill_manual(values = c('darkgrey', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated')) +
+  theme(panel.background = element_rect(fill = NA),
+        panel.border = element_rect(color = 'black', fill=NA),
+        panel.grid.major = element_line(color='grey90'),
+        panel.grid.minor = element_line(color='grey95'),
+        legend.position = 'bottom',
+        text = element_text(size = 18),
+        legend.box = 'vertical',
+        axis.title.y = ggtext::element_markdown(),
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+```
+
+
+## Domain of analysis
+
+```{r}
+#| warning: false
+#| message: false
+
+alt_sl <- sl %>% mutate(start = ifelse(vo == 0, start, vo))
+
+td2 <- get_trackdata(db, alt_sl, ssffTrackName='f0', verbose = FALSE)
+td2[which(td2$T1 == 0),'T1'] <- NA
+
+tdr2 <- get_trackdata(db, alt_sl, ssffTrackName='rf0', verbose = FALSE)
+tdr2[which(tdr2$T1 == -1),'T1'] <- NA
+
+td2 <- td2 %>% rename(praat_f0 = T1)
+td2$reaper_f0 <- tdr2$T1
+
+td2 <- td2 %>% mutate(
+  low_est = ifelse(reaper_f0 < praat_f0, reaper_f0, praat_f0),
+  f0_diff = (reaper_f0-praat_f0)/low_est,
+  f0 = case_when(
+    is.na(f0_diff) ~ NA,
+    abs(f0_diff) > 0.2 ~ NA,
+    times_orig < vo ~ NA,
+    TRUE ~ (praat_f0+reaper_f0)/2
+  )) %>% group_by(session) %>%
+  mutate(uppF0 = mean(f0, na.rm=T) + 3*sd(f0, na.rm=T),
+         lowF0 = mean(f0, na.rm=T) - 3*sd(f0, na.rm=T),
+         f0 = ifelse(f0 > uppF0 | f0 < lowF0, NA, f0))
+
+td2 <- td2 %>% group_by(session) %>%
+  mutate(zf0 = as.numeric(scale(f0))) %>%
+  ungroup()
+
+dat <- td2
+
+dat$diff <- rep(NA, nrow(dat))
+dat$diff[2:nrow(dat)] <-
+  dat$zf0[2:nrow(dat)] - dat$zf0[1:(nrow(dat)-1)]
+dat[which(dat$times_rel == 0),'diff'] <- NA
+max_diffs <- dat %>% group_by(sl_rowIdx) %>%
+  summarize(m = abs(max(diff, na.rm=T)))
+dat <- left_join(dat, max_diffs, by='sl_rowIdx')
+dat <- dat %>% filter(m < 1.5)
+
+trajTheme <- theme(panel.background = element_rect(fill = NA),
+                   panel.border = element_rect(color = 'black', fill=NA),
+                   panel.grid.major = element_line(color='grey90'),
+                   panel.grid.minor = element_line(color='grey95'),
+                   legend.position = 'bottom',
+                   text = element_text(size = 18),
+                   legend.box = 'vertical',
+                   plot.title = element_text(hjust = 0.5),
+                   axis.title.y = ggtext::element_markdown())
+
+td$alignment <- 'Aligned at stop release'
+td2$alignment <- 'Aligned at voicing onset'
+td_all <- rbind(td, td2)
+td_all$voi <- factor(td_all$voi, levels = c('nasal', 'unasp', 'asp'))
+td_all %>%
+  filter(variety == 'j', cond == 'foc') %>%
+  ggplot() +
+  aes(x=times_rel, y=zf0, color=voi) %>%
+  geom_smooth(method='gam') +
+  xlim(0,400) +
+  facet_grid(st~alignment,
+             labeller = labeller(
+               st = c(nst = 'non-stød', st = 'stød'))) +
+  ylab('*F*~0~ (*z*-scored)') +
+  xlab('Time (ms)') +
+  scale_color_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated')) +
+  trajTheme
+```
+
+
+## Statistical analysis
+
+Data analyzed using generalized additive mixed model fitted using `mgcv`
+
+- Dependent variable: *zF*~0~
+- Smooth variables: *onset* $\cdot$ *pitch target* $\cdot$ *stød* $\cdot$ *variety* (norm. time)
+- Other predictors: *vowel height*
+- Random smooths by-factor and by-item for all meaningful interactions
+
+::: {.aside}
+::: {style="font-size: 70%;"}
+@mgcv
+:::
+:::
+
+## Results: modal voice
+
+```{r}
+#| message: false
+#| warning: false
+
+load('data/gam_maxre_rho.Rda')
+
+u <- levels(interaction(dat$voi,dat$cond,dat$st,dat$variety))
+preds <- itsadug::get_predictions(gam_mod_rho, 
+                                cond=list(monsterInteraction = u[1],
+                                          times_norm = seq(0, 1, length=100)),
+                                print.summary = F)
+for (i in 2:24) {
+  tmp <- itsadug::get_predictions(gam_mod_rho, 
+                                  cond=list(monsterInteraction = u[i],
+                                            times_norm = seq(0, 1, length=100)),
+                                  print.summary = F)
+  preds <- rbind(preds, tmp)
+}
+
+preds <- preds %>%
+  separate(monsterInteraction, into = c('voi', 'cond', 'st', 'variety'),
+           remove = F)
+
+u <- as.character(unique(preds$monsterInteraction))
+sig <- c()
+for (i in 1:length(u)) {
+  m <- strsplit(u[i], '\\.')[[1]][1]
+  if (m == 'nasal') {
+    thisSig <- rep(NA, 100)
+    sig <- c(sig, thisSig)
+  } else {
+    intlevel <- paste(strsplit(u[i], '\\.')[[1]][2:4], collapse='.')
+    complevel <- paste('nasal', intlevel, sep='.')
+    dif <- itsadug::get_difference(gam_mod_rho, list(
+      monsterInteraction = c(complevel, u[i])
+    ), cond=list(times_norm=seq(0,1,length.out=100)), se=T, print.summary=F)
+    thisSig <- ifelse(dif$difference + dif$CI > 0, 0, 1)
+    sig <- c(sig, thisSig)
+  }
+}
+
+preds$sig <- sig
+
+preds$unasp_sig <- ifelse(preds$sig == 1 & preds$voi == 'unasp', 'sig', 'nsig')
+preds$unasp_sig <- ifelse(preds$voi != 'unasp', NA, preds$unasp_sig)
+preds$unasp_lower <- ifelse(preds$unasp_sig == 'sig', preds$times_norm, NA)
+preds$unasp_upper <- ifelse(preds$unasp_sig == 'sig', preds$times_norm +
+                              (1/99), NA)
+
+preds$asp_sig <- ifelse(preds$sig == 1 & preds$voi == 'asp', 'sig', 'nsig')
+preds$asp_sig <- ifelse(preds$voi != 'asp', NA, preds$asp_sig)
+preds$asp_lower <- ifelse(preds$asp_sig == 'sig', preds$times_norm, NA)
+preds$asp_upper <- ifelse(preds$asp_sig == 'sig', preds$times_norm +
+                              (1/99), NA)
+
+preds$voi <- factor(preds$voi, levels = c('nasal', 'unasp', 'asp'))
+
+ggTemplate <- 
+  ggplot() +
+  aes(x=times_norm) +
+  geom_ribbon(aes(ymin = fit - CI, ymax = fit + CI,
+                  fill = voi), alpha = 0.2) +
+  geom_line(aes(y = fit, color = voi)) +
+  facet_grid(variety~cond,
+             labeller = labeller(
+               variety = c(j = 'Jutland', z = 'Zealand'),
+               cond = c(foc = 'High pitch target', 
+                        nfoc = 'Low pitch target'))) +
+  xlim(0, 1) +
+  ylim(-2, 2.5) +
+  ylab('Fitted *F*~0~ (z-scored)') +
+  xlab('Time (norm.)') +
+  trajTheme
+```
+
+
+```{r}
+ggTemplate$data <- preds %>% filter(st == 'nst', voi == 'nasal')
+ggTemplate +
+  scale_color_manual(values = 'black',
+                     name = 'Onset',
+                     labels = 'nasal') +
+  scale_fill_manual(values = 'black',
+                     name = 'Onset',
+                     labels = 'nasal')
+```
+
+## Results: modal voice
+
+```{r}
+#| warning: false
+#| message: false
+
+ggTemplate$data <- preds %>% filter(st == 'nst', voi %in% c('nasal', 'asp'))
+ggTemplate +
+  geom_linerange(aes(xmin=asp_lower, xmax=asp_upper, y=2.5),
+                 color = 'darkorange', lwd=1) +
+  scale_color_manual(values = c('black', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'aspirated')) +
+  scale_fill_manual(values = c('black', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'aspirated'))
+```
+
+## Results: modal voice
+
+```{r}
+#| warning: false
+#| message: false
+
+ggTemplate$data <- preds %>% filter(st == 'nst')
+ggTemplate +
+  geom_linerange(aes(xmin=asp_lower, xmax=asp_upper, y=2.5),
+                 color = 'darkorange', lwd=1) +
+  geom_linerange(aes(xmin=unasp_lower, xmax=unasp_upper, y=-2),
+                 color = 'blue', lwd = 1) +
+  scale_color_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated')) +
+  scale_fill_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated'))
+```
+
+## Results: stød
+
+```{r}
+ggTemplate$data <- preds %>% filter(st == 'st', voi == 'nasal')
+ggTemplate +
+  scale_color_manual(values = 'black',
+                     name = 'Onset',
+                     labels = 'nasal') +
+  scale_fill_manual(values = 'black',
+                     name = 'Onset',
+                     labels = 'nasal')
+```
+
+## Results: stød
+
+```{r}
+#| warning: false
+#| message: false
+
+ggTemplate$data <- preds %>% filter(st == 'st', voi %in% c('nasal', 'asp'))
+ggTemplate +
+  geom_linerange(aes(xmin=asp_lower, xmax=asp_upper, y=2.5),
+                 color = 'darkorange', lwd=1) +
+  scale_color_manual(values = c('black', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'aspirated')) +
+  scale_fill_manual(values = c('black', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'aspirated'))
+```
+
+## Results: stød
+
+```{r}
+#| warning: false
+#| message: false
+
+ggTemplate$data <- preds %>% filter(st == 'st')
+ggTemplate +
+  geom_linerange(aes(xmin=asp_lower, xmax=asp_upper, y=2.5),
+                 color = 'darkorange', lwd=1) +
+  geom_linerange(aes(xmin=unasp_lower, xmax=unasp_upper, y=-2),
+                 color = 'blue', lwd = 1) +
+  scale_color_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated')) +
+  scale_fill_manual(values = c('black', 'blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('nasal', 'unaspirated', 'aspirated'))
+```
+
+## Discussion: Danish C*F*~0~
+
+- *F*~0~ raised after stop releases: /[p]{style="color:darkorange;"}/ > /[b]{style="color:blue;"}/ > /m/
+
+  - CT probably not the culprit
+  - Consistent with vocalis as the culprit
+  - Supports Goldstein and Browman's [-@goldstein1986] suggestion of a general reaction to voicing inhibition
+    - But what are the specific mechanisms?
+
+## Discussion: C*F*~0~ and global pitch adjustments
+
+- C*F*~0~ is enhanced by an intonational high pitch target on the *word*
+- This effect is "global"
+  - Also when high pitch target is on a different syllable
+  - But moreso when the high pitch target is closer to the stop
+- This could be a synergy effect
+  
+## Discussion: C*F*~0~ and local pitch adjustments
+
+- C*F*~0~ is reduced by a lexical high pitch target
+  - *Especially* when combined with a an intonational high pitch target
+- No synergy effect when it may affect a phonological contrast
+
+## References {style="font-size: 50%;"}
+
+::: {#refs}
+:::
+
+## Bonus: model formula
+
+``` {r}
+#| eval: false
+#| echo: true
+
+final_mod <- bam(zf0 ~ monsterInteraction + vowel_height +
+                   s(time, by=monsterInteraction) +
+                   s(time, speaker, by=bigInteraction, bs='fs', m=1, k=5) +
+                   s(time, item, by=smallInteraction, bs='fs', m=1, k=5),
+                 data = dat %>%
+                   mutate(monsterInteraction = 
+                            interaction(onset,pitchlevel,stod,variety),
+                          bigInteraction = interaction(onset,pitchlevel,stod),
+                          smallInteraction = interaction(onset,variety),
+                          startEvent = time == 0),
+                 family = 'scat',
+                 discrete = TRUE, 
+                 nthreads = 10,
+                 rho = itsadug::acf_resid(no_acf_mod)[2], 
+                 AR.start = startEvent)
+```
+
+## Bonus: residual plots
+
+```{r}
+res <- gam_mod_rho$residuals
+m <- mean(res)
+s <- sd(res)
+
+normdist <- ggplot(data.frame(res)) + 
+  aes(x=res) +
+  geom_histogram(aes(y=after_stat(density)), bins=24) +
+  stat_function(fun=dnorm,
+                args=list(mean=m, sd=s),
+                color='blue', lwd=1) +
+  xlim(-4, 4) +
+  ggtitle('Comparison with normal distribution') +
+  xlab('Residuals') +
+  trajTheme
+
+qqpl <- ggplot() +
+  aes(sample=res) +
+  stat_qq() +
+  stat_qq_line(color='blue', lwd=1) +
+  ggtitle('QQ plot') +
+  xlab('Theoretical quantiles') + ylab('Samples') +
+  trajTheme
+
+gridExtra::grid.arrange(normdist, qqpl, ncol=2)
+```
+
+
+## Bonus: VOT comparison
+
+```{r}
+sl %>% mutate(varietyFullNames = 
+                ifelse(variety == 'j', 'Jutland', 'Zealand')) %>%
+  filter(voi != 'nasal', !is.na(variety)) %>% 
+  ggplot() +
+  aes(x=varietyFullNames, y=vot, fill=voi) +
+  geom_jitter(aes(col=voi), alpha=0.1) +
+  geom_violin() +
+  facet_grid(cond~voi,
+             labeller = labeller(
+               cond = c(foc = 'High pitch target', 
+                        nfoc= 'Low pitch target'),
+               voi = c(unasp = 'Unaspirated',
+                       asp = 'Aspirated'))) +
+  xlab('Variety') +
+  ylab('Positive voice onset time (ms)') +
+  scale_color_manual(values = c('blue', 'darkorange'),
+                     name = 'Onset',
+                     labels = c('unaspirated', 'aspirated'),
+                     guide = 'none') +
+  scale_fill_manual(values = c('blue', 'darkorange'),
+                    name = 'Onset',
+                    labels = c('unaspirated', 'aspirated'),
+                    guide = 'none') +
+  trajTheme
+```
+

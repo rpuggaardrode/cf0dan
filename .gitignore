@@ -1,0 +1,13 @@
+.Rproj.user/*
+.Rdata
+.Rhistory
+cf0dan.Rproj
+index.html
+index.log
+index.qmd
+index.tex
+.Rproj.user
+.httr-oauth
+.DS_Store
+.quarto
+data/gam_maxre_rho.Rda
