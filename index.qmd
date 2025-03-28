@@ -1,6 +1,6 @@
 ---
-title: "Danish CF0"
-subtitle: "maybe"
+title: "Obstruent co-intrinsic pitch and other demands on the larynx"
+subtitle: "Revisiting the mechanisms behind co-intrinsic pitch in Danish"
 authors: 
   - name:
       given: 'Rasmus'
@@ -52,37 +52,35 @@ bibliography: references.bib
 csl: css/journal-of-linguistics.csl
 number-sections: true
 abstract: >
-  Abstract goes here.
+  Obstruent consonants often exert a localized influence on pitch level in following segments, such that pitch is higher following phonologically voiceless obstruents. The precise underlying mechanisms of such co-intrinsic pitch effects remain disputed, and it remains unclear how they interact with other (more or less localized) demands on the larynx. We revisit co-intrinsic pitch effects in Danish, a language with two series of actively devoiced stops that differ in the magnitude and extent of glottal spreading, and accordingly, in the magnitude and extent of positive voice onset time. Danish is further interesting because it has a phonological voice quality contrast (stød) which places complex demands on the larynx, and there is regional variation in where intonational pitch peaks occur relative to the stressed syllable. We elicit alternative question sentences from speakers of two different dialects of Danish, which allows us to tease apart how co-intrinsic pitch effects behave when there are multiple series of voiceless stops, when the global pitch target is high versus low, when a high pitch target falls early versus late in a focused word, and when there are competing demands on the vocal fold from a voice quality contrast. We find that pitch is uniformly raised in both series of stops relative to a neutral baseline, but the duration and magnitude of the effect differs by stop category. This effect is enhanced by a global intonational high pitch target in words with modal voice but inhibited by competing demands on the larynx in words with stød.
 ---
 
 # Introduction
 
-It is well-established that some segments exert a localized influence on pitch, which is superimposed on an overall pitch contour.
+It is well-established that segments may exert a localized influence on pitch, which is superimposed on an overall pitch contour.
 For example, pitch is higher during high vowels than during low vowels, and pitch is higher immediately following voiceless consonants than during voiced consonants.
-Vowel-intrinsic *F*~0~ was first described more than a century ago [@meyer1897] and appears to be essentially universal [@whalen1995; @ting2023], although it does not appear to have phonological consequences or to play a role in sound change.
-Co-intrinsic *F*~0~ of consonants [which we refer to as C*F*~0~ following e.g. @dicristo1986], i.e. the effect that consonants have on the *F*~0~ of surrounding segments, has also been documented in many languages with various kinds of laryngeal contrasts in obstruents, but the effects are rather more variable than vowel-intrinsic *F*~0~ depending on e.g. the exact implementation of the laryngeal contrast and other aspects of the phonological system [e.g. @chen2011jphon; @kirby2018jphon].
-C*F*~0~ is also assumed to play a major role in tonogenetic sound change processes, where C*F*~0~ is often assumed to have transphonologized into lexical tone with concomitant loss of the voiced--voiceless contrast [@hyman1976; @kirby2017].
+Co-intrinsic *F*~0~ of consonants [which we refer to as C*F*~0~ following e.g. @dicristo1986], i.e. the effect that consonants have on the *F*~0~ of surrounding segments, has been documented in many languages with various kinds of laryngeal contrasts in obstruents [e.g. @chen2011jphon; @kirby2018jphon].
+C*F*~0~ is assumed to play a major role in tonogenetic sound change processes, where C*F*~0~ is often assumed to have transphonologized into lexical tone with concomitant loss of the voiced--voiceless contrast [@hyman1976; @kirby2017].
 
-There is a substantial body of literature on C*F*~0~, but several open questions remain about the underlying mechanisms.
-For example, it remains unclear to which extent C*F*~0~ is actively controlled or an automatic by-product of e.g. laryngeal gestures aimed at inhibiting phonation.
+Despite the substantial body of literature on C*F*~0~, several open questions remain about the underlying mechanisms.
+It remains an open question how exactly C*F*~0~ interacts with other more and less localized sources of prosodic modification. 
+It also remains unclear to what extent C*F*~0~ is actively controlled or an automatic by-product of e.g. laryngeal gestures aimed at inhibiting or sustaining phonation.
 If it is primarily the latter, it is still not clear what exactly those gestures might look like.
-It also remains an open question how exactly C*F*~0~ interacts with other more and less localized sources of prosodic modification. 
 Given that some extent of C*F*~0~ appears to be near-universal [@ting2023] and can demonstrably have crucial downstream consequences for phonological systems, understanding these mechanisms is important for the phonetic sciences and the study of sound change.
-In this paper, we approach some of these open questions by revisiting C*F*~0~ in Danish, where both the prosodic phonology and the laryngeal contrast in stops have properties that make it suitable for approaching these questions.
+In this paper, we approach some of these open questions by revisiting C*F*~0~ in Danish, where both the prosodic phonology and the laryngeal contrast in stops have properties that make it a suitable language for approaching these questions.
 
 Danish is an interesting case in terms of C*F*~0~ for at least the following reasons:
-1) The laryngeal contrast in stops is somewhat unusual, contrasting a series of voiceless aspirated stops [pʰ tʰ kʰ] with a series of voiceless unaspirated stops [p t k] [@hutters1985; @puggaardrode2022labphon]. 
+1) The laryngeal contrast in stops is somewhat unusual, contrasting a series of voiceless aspirated stops [p^h^ t^h^ k^h^] with a series of voiceless unaspirated stops [p t k] [@hutters1985; @puggaardrode2022labphon]. 
 Unlike the corresponding unaspirated stops in most other Germanic languages [e.g. @beckman2013], the Danish voiceless unaspirated stops are *actively* devoiced, in the sense that voiceless realizations are the norm even in intervocalic position [@puggaardrode2022labphon], and this is enforced through (light) glottal spreading [@fischerjorgensen1974lips; @hutters1985].
 This make Danish particularly suitable for testing whether C*F*~0~ is caused by active adjustment to enhance a phonological contrast (in which case only one stop series should be affected), or whether it is caused by gestures inhibiting voicing (in which case both stop series should potentially be affected).
-2) The physiology of the Danish laryngeal contrast in obstruents is -- all things considered -- studied very extensively, using fiberoptic laryngoscopy [@fischerjorgensen1969; @hutters1978; -@hutters1984; -@hutters1985], electromyography [@fischerjorgensen1974lips; @hutters1984; -@hutters1985], various measures of airflow and air pressure [@fischerjorgensen1969], among others, making a comparison between (acoustic) C*F*~0~ patterns and articulation reasonable.
-3) There is regional variation in Danish in the location of the pitch peak relative to stress [e.g. @thorsen1981; @thorsen1982; -@thorsen1988; @gronnum1989; -@gronnum1990], making it possible to tease apart the respective influence of stress and high pitch on C*F*~0~, by comparing varieties where pitch peak and stress coincide with varieties where they do not.
+2) The Danish stops have been studied very extensively, both in terms of acoustic realization [@fischerjorgensen1954; @mortensen2013; @puggaardrode2022labphon; @puggaardrode2022jphon] and physiology, using fiberoptic laryngoscopy [@fischerjorgensen1969; @hutters1978; -@hutters1984; -@hutters1985], electromyography [@fischerjorgensen1974lips; @hutters1984; -@hutters1985], various measures of airflow and air pressure [@fischerjorgensen1969], among others.
+3) There is regional variation in Danish in the location of the pitch peak relative to stress [e.g. @thorsen1981; @thorsen1982; -@thorsen1988; @gronnum1989; -@gronnum1990], making it possible to tease apart the respective influence of focus and high pitch on C*F*~0~, by comparing varieties where pitch peak and stress coincide with varieties where they do not.
 4) Danish has a voice quality contrast (known as *stød*) which is, among other things, cued by pitch differences immediately after an initial consonant [e.g. @petersen1973; @fischerjorgensen1989; @pena2022], making it possible to investigate how C*F*~0~ interacts with other localized pitch modifications.
 
 C*F*~0~ has already been investigated in Danish [@jeel1975; @petersen1978aripuc; -@petersen1983]; these studies suggest that C*F*~0~ is indeed found in Danish [although cf. @fischerjorgensen1969], but the studies were not designed with the aforementioned open questions in mind, and thus cannot directly be used to approach them.
-Perhaps just as importantly, these studies are cited not infrequently in favor of arguments that we are not convinced the studies can actually support, which makes a larger-scale replication study valuable.
+Perhaps just as importantly, these studies are frequently cited despite being based on limited data and having certain methodological shortcomings by today's standards, which makes a larger-scale replication study valuable.
 
 Our results show that both series of stops raise *F*~0~, although the temporal extent and magnitude of the effect differs.
-Given what we know about the articulation of these stops and how voicelessness is implemented, these results challenge some existing theories of the biomechanical source of C*F*~0~; the relevant literature is covered in the next sections. 
 We find some evidence of global, intonational high pitch targets enhancing C*F*~0~, but we also find a tendency for the reverse effect when there are competing phonological demands on the local pitch level.
 
 The following two subsections review the general literature on C*F*~0~, especially pertaining to the open questions we are interested in here, and the relevant literature on the Danish laryngeal contrast, regional variability in stress and pitch peak alignment, and the implementation of stød. Our research questions and hypotheses are presented in @sec-rq.
@@ -93,71 +91,57 @@ We present the results of the study in @sec-results, and discuss them in light o
 
 ### General overview {#sec-cf0overview}
 
-C*F*~0~ was first studied in English by @house1953, and has since been found in a very wide range of languages [see overviews in e.g. @kirby2018jphon; @ting2023].
-C*F*~0~ effects should be thought of as deviations from an overarching pitch contour, so when studying them, it is crucial to ensure that they are compared to a suitable baseline, and that the prosodic context is controlled.
-Modally voiced sonorant consonants are not expected to cause *F*~0~-perturbations, since their articulatory configuration should not provide any obstructions to airflow, so unlike in e.g. voiced stops [@sole2018], voicing proceeds without making articulatory adjustments to support it.
-For this reason, nasals in particular are often recorded in a comparable context in studies of C*F*~0~, and *F*~0~ following nasals serves as a baseline condition [e.g. @hanson2009; @kirby2016; @ladd2018].
-The prosodic context is typically controlled by having items produced in citation form [e.g. @kirby2020jasa; @gao2024] or embedding them in a controlled carrier phrase [e.g. @lehiste1961; @silverman1986; @hanson2009; @kirby2016; @gao2019].
-@xu2021 further argue that it is important to compare equivalent time points within the syllables of interest, stressing that pitch peaks in intonation contours are not necessarily timed to the onset of voicing after a stop; if pitch peaks are e.g. timed relative to the beginning of the syllable and *F*~0~ is compared at voicing onset, it will inevitably result in an overestimation of the temporal extent of C*F*~0~ [see also @wong2007]. 
-@xu2021 in fact hypothesize that pitch trajectories are *always* synchronized to syllables.
-
+C*F*~0~ was first observed by @meyer1897 and first studied in English by @house1953. It has been documented in a very wide range of languages [see e.g. the overview in @ting2023].
 Some have suggested that *F*~0~ is *raised* following voiceless stops due to gestures that inhibit voicing, such as stiffening or vertical tensing of the vocal folds [@halle1971; @hombert1979], in particular tensing of the cricothyroid muscle [@lofqvist1989; @hoole2011], or due to abrupt activity of the vocalis muscle to initiate voicing [@hoole2006; @hoole2011].
 Others have suggested that *F*~0~ is *lowered* following voiced stops due to gestures that promote closure voicing, such as larynx lowering [e.g. @ewan1974; @ewan1976] with concomitant vocal fold slackening [@ohde1984; @honda1999], or that *F*~0~ lowering in this context is an active adjustment to perceptually enhance the voicing contrast [@kingston1994; @kingston2007].
 Note that these two mechanisms may not be mutually exclusive.
 When comparing post-stop *F*~0~ trajectories to a suitable baseline, C*F*~0~ effects in the direction of *F*~0~ raising after voiceless stops are typically found to be much more extensive than *F*~0~ lowering [@hanson2009].
-Lowering is often found only during the stop closure itself [@kirby2016], although @maspong2024 do find evidence of this effect extending into the initial parts of the vowel in Italian.^[If *F*~0~ lowering is found only during the stop closure, this should technically be considered an *intrinsic* *F*~0~ effect (I*F*~0~) rather than co-intrinsic, cf. @krug2021.]
-
+Lowering is often found only during the stop closure itself [@kirby2016], although @coetzee2018 and @maspong2024 do find evidence of this effect extending into the initial parts of the vowel in Afrikaans and Italian, respectively.^[If *F*~0~ lowering is found only during the stop closure, this should technically be considered an *intrinsic* *F*~0~ effect (I*F*~0~) rather than co-intrinsic, cf. @krug2021.]
 An alternative explanation of C*F*~0~ holds that the effects are caused by intraoral air pressure differences after voiced and voiceless stops [e.g. @ladefoged1967; @ohala1973; @hombert1976]; this explanation is attractive since it in principle accounts for both *F*~0~ lowering and *F*~0~ raising, but it arguably fails to predict the scope of *F*~0~ modifications, especially that *F*~0~ raising can be quite long-lasting [see @hombert1979]. 
-An aerodynamic account would also predict covariation between especially positive voice onset time (pVOT) and the extent of *F*~0~ raising, which many studies do not find evidence for [e.g. @dmitrieva2015; @kirby2016; @pinget2023], although cf. @shultz2012 and @kirby2015.
+Such an aerodynamic account would also predict covariation between especially positive voice onset time (pVOT) and the extent of *F*~0~ raising, which many studies do not find evidence for [e.g. @dmitrieva2015; @kirby2016; @pinget2023], although cf. @shultz2012 and @kirby2015.
 
-### Universality {#sec-universality}
-
-C*F*~0~ appears to be relatively independent of how exactly a laryngeal contrast is implemented.
+C*F*~0~ appears to be relatively independent of how exactly laryngeal contrasts are implemented.
 The overall effect -- namely that *F*~0~ is higher following 'less voiced' stops than 'more voiced' stops (in a very broad sense) -- are found in 'aspiration languages', where the main cue to the laryngeal contrast is post-aspiration in the voiceless series of stops, such as English [e.g. @house1953] and German [e.g. @kohler1982; @kirby2020icphs], and in 'true voice languages', where the main cue to the contrast is the presence of glottal pulsing during the closure in the voiced series of stops, such as Italian [@kirby2015; -@kirby2016], French [ibid., @fischerjorgensen1969], Spanish [@dmitrieva2015], and Dutch [@lofqvist1989; @pinget2023].
-It is also found in languages which primarily distinguishes stops through closure duration, such as Swiss German [@ladd2018] and Salentino [@burroni2022], and in languages where both pre-voicing and aspiration ostensibly plays a role in the contrast, such as Swedish [@kirby2023icphs; although cf. @ting2023].^[Swedish is often considered to have an 'overspecified' laryngeal contrast between pre-voiced and post-aspirated stops [e.g. @helgason2008; @beckman2011], but several studies have failed to find evidence of consistent pre-voicing [@keating1983; @sundberg1999; @lundeborg2012; @kirby2023icphs].]
+It is also found in languages which primarily distinguish stops through closure duration, such as Swiss German [@ladd2018; @zebesheng2025] and Salentino [@burroni2022], and in languages where both pre-voicing and aspiration ostensibly plays a role in the contrast, such as Swedish [@kirby2023icphs; although cf. @ting2023].^[Swedish is sometimes considered to have an 'overspecified' laryngeal contrast between pre-voiced and post-aspirated stops [e.g. @helgason2008; @beckman2011], but several studies have found the presence of pre-voicing to vary considerably across speakers, items, and utterances [@keating1983; @sundberg1999; @lundeborg2012; @kirby2023icphs].]
+This is less straightforward in languages with more complex laryngeal contrasts. For example, while post-aspiration generally serves to raise *F*~0~ in languages with two-way contrasts, it has sometimes been shown to lower *F*~0~ in languages which contrast *both* voicing and aspiration, such as Nepali and Bengali [@clements2007; @reetz2019].
 
-A complicating factor is that this relationship between 'voicelessness' and *F*~0~ is often less straightforward in languages with more complicated laryngeal contrasts in obstruents, or languages which already have lexical tone.
-While post-aspiration consistently seems to raise *F*~0~ in non-tonal languages with simple two-way contrasts, it has sometimes been shown to lower *F*~0~ in languages which contrast *both* voicing and aspiration, such as Nepali and Bengali [@clements2007; @reetz2019].
-In languages with lexical tone, results have been much more mixed.
-In Shanghai Wu and Shuangfeng Xiang, post-aspiration generally lowers *F*~0~ [@chen2011jphon; @shi2020diss], whereas in Khmer, Thai, Vietnamese, and Taiwanese, post-aspiration generally raises *F*~0~ [@lai2009eal; @kirby2018jphon]; in all of these languages, the scope of C*F*~0~ depends greatly on tonal context, and in other languages such as Mandarin Chinese and Cantonese, even the direction of C*F*~0~ can depend on tonal context [e.g. @francis2006; @shi2020jasa; @guo2022].^[Some studies [@xu2003; @lo2022] find that aspiration consistently serves to raise *F*~0~ in Mandarin Chinese.]
-Two plausible reasons for these discrepancies are that languages use different articulatory mechanisms to implement post-aspiration, and that the range of possible C*F*~0~ effects are limited when the phonological context places competing demands on the larynx, e.g. to produce a certain pitch level.
-As we will see below, Danish is an intriguing case study here, as 1) the articulatory mechanisms that produce post-aspiration are quite well-described, and 2) the voice quality contrast already places certain demands on the larynx with respect to pitch level.
+C*F*~0~ effects should be thought of as deviations from an overarching pitch contour, so when studying them, it is crucial to ensure that they are compared to a suitable baseline, and that the prosodic context is controlled.
+Modally voiced sonorant consonants are not expected to cause *F*~0~-perturbations, since their articulatory configuration should not provide any obstructions to airflow, so unlike in e.g. voiced stops [@sole2018], we have no reasons to expect additional articulatory adjustments to support voicing.
+For this reason, nasals in particular are often recorded in a comparable context in studies of C*F*~0~, and *F*~0~ following nasals serves as a baseline condition [e.g. @hanson2009; @kirby2016; @ladd2018].
+The prosodic context is typically controlled by having items produced in citation form [e.g. @kirby2020jasa] or embedding them in a controlled carrier phrase [e.g. @lehiste1961; @silverman1986; @hanson2009; @kirby2016; @gao2019].
+@xu2021 further argue that it is important to compare equivalent time points within the syllables of interest, stressing that pitch peaks in intonation contours are not necessarily timed to the onset of voicing after a stop; if pitch peaks are e.g. timed relative to the beginning of the syllable and *F*~0~ is compared at voicing onset, it will inevitably result in an overestimation of the temporal extent of C*F*~0~ [see also @wong2007]. 
+@xu2021 in fact hypothesize that pitch trajectories are *always* synchronized to syllables.
 
-### Pitch synergy
+### Interaction with other demands on pitch {#sec-cf0-pitch}
 
 Several studies have found that the scope of C*F*~0~, in terms of both magnitude and temporal extent, is larger in environments with high pitch, such as when the word in question is uttered in a focus condition [e.g. @kohler1982; @hanson2009; @kirby2016].
 The results of @chen2011jphon also suggest that there is synergy between C*F*~0~ and other pitch targets in a lexical tone language, *viz.* Shanghai Chinese: co-intrinsic *F*~0~ raising is enhanced in high pitch environments, while co-intrinsic *F*~0~ lowering is enhanced in low pitch environments. 
-On the basis of this, she hypothesizes C*F*~0~ effects are more prominent when there is congruency between the vocal fold stiffness required by a tonal pitch target and that required by a consonant.
-These effects are both strengthened under prosodic focus, suggesting that they may be the result of gestural enhancement.
+On the basis of this, she hypothesizes C*F*~0~ effects are more prominent when there is congruency between the vocal fold stiffness required by a tonal pitch target and that specified by a consonant.
+These effects are both strengthened under prosodic focus, which suggests that they may be the result of gestural enhancement.
 
-It is difficult to tease apart the effect of high pitch, stress, and focus in studies of C*F*~0~, since items of interest are typically elicited in stressed or focused contexts. 
-@hanson2009 and @kirby2016 evade this problem by designing materials aimed at eliciting focused words in both high and low pitch environments.
+Compared to languages without lexical tone, the relationship between 'voicelessness' and C*F*~0~ is less straightforward in languages that have lexical tone.
+In Shanghai Wu and Shuangfeng Xiang, *F*~0~ is generally lowered after post-aspiration [@chen2011jphon; @shi2020diss], whereas in Khmer, Thai, Vietnamese, and Taiwanese, *F*~0~ is generally raised after post-aspiration [@lai2009eal; @kirby2018jphon]; in all of these languages, the scope of C*F*~0~ depends greatly on tonal context, and in other languages such as Mandarin Chinese and Cantonese, even the direction of C*F*~0~ can depend on tonal context [e.g. @francis2006; @shi2020jasa; @guo2022].^[Some studies [@xu2003; @lo2022] find that aspiration consistently serves to raise *F*~0~ in Mandarin Chinese.]
+Two plausible reasons for these discrepancies are 1) that languages use different articulatory mechanisms to implement post-aspiration, and 2) that the range of possible C*F*~0~ effects are limited when the phonological context places competing demands on the larynx, e.g. to produce a certain pitch level.
+As we will see below, Danish is an intriguing case study here, as 1) the articulatory mechanisms that produce post-aspiration are quite well-described, and 2) the voice quality contrast also places certain (very well-described) demands on the larynx with respect to pitch level.
+
+It is difficult to straightforwardly determine the influence of intonational or non-intonational pitch targets, stress, and focus on C*F*~0~, since items of interest are typically elicited in stressed or focused contexts. 
+@hanson2009 and @kirby2016 partially evade this problem by designing materials aimed at eliciting focused words in both high and low pitch environments.
 As we will see below, (variation in) the prosodic phonology of Danish makes it an intriguing case for teasing apart how different sources of high and low pitch affect C*F*~0~.
 
 ## Previous work on Danish {#sec-review-danish}
 
-### The laryngeal contrast in stops
+### Laryngeal contrast and C*F*~0~ {#sec-review-danish-contrast}
 
 Danish stops display a two-way laryngeal contrast between /b d g/ and /p t k/.
-In simple onset position before a full vowel, /b d g/ are voiceless unaspirated [p t k] and /p t k/ are voiceless aspirated [pʰ tʰ kʰ] [@fischerjorgensen1954]. 
+In simple onset position before a full vowel, /b d g/ are voiceless unaspirated [p t k] and /p t k/ are voiceless aspirated [p^h^ t^h^ k^h^] [@fischerjorgensen1954]. 
 Aspiration-based stop contrasts are the norm in Germanic languages [e.g. @iverson1995], but Danish is unusual in how much closure voicing is repressed in /b d g/.
 Aspiration is of course regulated with a glottal spreading gesture, but several previous studies have shown that /b d g/ are *also* produced with a glottal spreading gesture, albeit of a smaller magnitude [@fischerjorgensen1969; @frokjaerjensen1971; @fischerjorgensen1974lips; @hutters1978; -@hutters1984; -@hutters1985]. 
-Electromyographic studies have shown that this gesture is likely an active adjustment, in the sense that it is accomplished through tensing of the posterior cricoarytenoid muscles [@fischerjorgensen1974lips; @hutters1985], and not simply an aerodynamic by-product of the consonant--vowel transition, as originally proposed by @frokjaerjensen1971.
+Electromyographic studies suggest that this gesture is an active adjustment, in the sense that it is accomplished through tensing of the posterior cricoarytenoid muscles [@fischerjorgensen1974lips; @hutters1985], and not simply an aerodynamic by-product of the consonant--vowel transition, as originally proposed by @frokjaerjensen1971.
 This glottal opening gesture serves to counteract voicing, even in e.g. intervocalic position [@puggaardrode2022labphon].
-No such gesture is found in English /b d g/ [@sawashima1970], although a similar gesture is found in Icelandic /b d g/ [@petursson1976], where it likely also serves as an active devoicing gesture.
-
-Glottal spreading, accomplished by tensing the posterior crycoarytenoids and suppressing activity in the interarytenoids, seems to be the main driver of devoicing in the production of Danish stops. 
-Another potential driver, according to @hutters1985 and following e.g. @hirose1974, is suppressed activity in the vocalis muscle, which may reduce slackness in the vocal folds and hence impede voicing. 
-Danish /p t k/ in particular show an abrupt increase in vocalis activity approaching the vowel onset; recall that @hoole2006 and @chen2011jphon discuss this as a possible mechanism behind C*F*~0~.
-@hutters1985 only has stable cricothyroid measurements from a single speaker, and these hint that the cricothyroid is essentially in rest position during the production of /b d g/, while activity is slightly increased in /p t k/. 
-We cannot draw any strong conclusions from this, but it certainly suggests that the cricothyroid is *not* a main driver in Danish stop devoicing.
-If C*F*~0~ is indeed primarily caused by cricothyroid tensing, as suggested by @lofqvist1989, then we may expect to see relatively limited effects after /p t k/ and no effects at all after /b d g/. 
-
-### Co-intrinsic *F*~0~ in Danish
+No such gesture is found in English /b d g/ [@sawashima1970], although a similar gesture is found in Icelandic /b d g/ [@petursson1976], where it likely also serves to support devoicing.
 
 The first to touch on C*F*~0~ in Danish was Fischer-Jørgensen [-@fischerjorgensen1968; -@fischerjorgensen1969]. 
-She writes that the effect is not found in Danish, but she does not actually report the results of a C*F*~0~ study.
-
+She writes that no such effect is found in Danish, but she does not actually report the results of a C*F*~0~ study.
 The topic was taken up again by @jeel1975, who measured 6 speakers reading words with initial stops and other obstruents in identical carrier phrases; for four of these speakers, words with initial sonorants were also recorded.
 She finds that *F*~0~ immediately at the onset of the following vowel is consistently higher after /p t k/ than /b d g/; for those 4 speakers where stops can be compared to a sonorant baseline, the results are somewhat mixed, but *F*~0~ is shown to be higher or very similar after /b d/ compared to /m n/.
 In several cases, the difference between sonorants and unaspirated stops is found to be greater than the difference between unaspirated and aspirated stops.
@@ -172,9 +156,8 @@ The results show that *F*~0~ is initially raised after /p t k/ compared to /b d 
 
 @goldstein1986 cite both @jeel1975 and @petersen1983 in arguing that the laryngeal contrast is phonologically specified with continuous gestural underlying representations, claiming that their framework can account well for the raised *F*~0~ of both stop series relative to nasals, and for the difference in *F*~0~ between the two stop series.
 @kingston1994, on the other hand, cite both sources as evidence that Danish /b d g/ are phonologically represented with the distinctive feature [+voice], which acts as an *F*~0~ depressor. 
-We believe that this is a misinterpretation of the studies, since the studies suggest that both series of stops actually raise *F*~0~ relative to a neutral baseline.
 
-### Stød production and *F*~0~
+### Stød production and *F*~0~ {#sec-review-stod}
 
 Standard Copenhagen Danish has a distinctive voice quality typically refered to as *stød*, which is realized over entire sonorant syllable rhymes [e.g. @gronnum2007].^[This section gives an overview of existing literature on the phonetics of stød as pertains to the present study; for a recent extensive general overview, see @gronnum2023.]
 Stød in Copenhagen Standard Danish is generally acknowledged to be biphasic [@smith1944], where the first phase exhibits raised *F*~0~ relative to syllables without stød [e.g. @vihman1971; @petersen1973; @pena2022], and the second phase typically exhibits a drop in *F*~0~, a drop in intensity, and creaky, irregular phonation [e.g. @fischerjorgensen1987; -@fischerjorgensen1989; @hansen2015].
@@ -182,9 +165,7 @@ While early research suggested that the first phase played little role in the pe
 in the first phase alone [@pena2024], particularly *F*~0~ [@siem2023diss].
 
 Articulatory work shows that the second phase of stød is produced with laryngeal constriction [@esling2019], in particular contraction of both the ventricular folds and the anterior part of the vocal folds [@fischerjorgensen1987; -@fischerjorgensen1989], leading to a reduced contact quotient between the folds relative to words without stød [@siem2023diss]. 
-The first stød phase has further been found to be accompanied by *stronger* articulation in several ways: compared to syllables without stød, oral airflow is stronger [@smith1944], subglottal air pressure is higher, and the palatal contact area is larger [@fischerjorgensen1987; -@fischerjorgensen1989].
-Electromyographic investigations suggest that the second phase is initiated with brief but strong activation peaks of the vocalis and lateral cricoarytenoids some 50 ms after the vowel onset, while the first phase is initiated with a strong activation peak of the cricothyroid prior to the onset of the vowel [@faaborgandersen1957; @fischerjorgensen1974stod; @fischerjorgensen1987; -@fischerjorgensen1989]; recall that the cricothyroid is likely partially responsible for devoicing in /p t k/ but not in /b d g/.
-@gronnum2007 interpret the laryngeal control mechanisms as evidence of a single ballistic laryngeal gesture timed relative to the beginning of the syllable rhyme which accounts for both phases, while @pena2022 interprets them as evidence of two gestures corresponding to the two phases, the first timed relative to the vocalic onset, and the latter timed relative to the center of the syllable rhyme.
+The first stød phase has further been found to be accompanied by *stronger* articulation in several ways: compared to syllables without stød, oral airflow is higher [@smith1944], subglottal air pressure is higher, and the palatal contact area is larger [@fischerjorgensen1987; -@fischerjorgensen1989].
 
 There is substantial regional variation in how stød is realized and how it patterns phonologically in Danish [e.g. @ejskjaer1990; -@ejskjaer2006].
 Most of this variation is not relevant to our purposes here, but it is worth mentioning that stød in Aarhus Danish appears to be predominantly tonal [@kyst2008]; unlike in Standard Copenhagen Danish, syllables with and without stød are poorly distinguished using acoustic measures of spectral slope and harmonics-to-noise ratio, and the contact quotient does not differ [@siem2023diss].
@@ -303,28 +284,28 @@ mapDK <- ggplot() +
 mapDK
 ```
 
-This particular pattern of variation gives a unique opportunity to tease apart the influences of stress and pitch on C*F*~0~. 
-If the previous findings of more extensive C*F*~0~ under stress are actually due to synergistic effects of multiple sources of pitch raising, we should find stronger C*F*~0~ effects in Jutland Danish compared to Zealand Danish, at least in syllables without stød.
-However, if the findings are actually due to stress and not pitch, the varieties are expected to show similar behavior.
+This particular pattern of variation gives a unique opportunity to tease apart the influences of focus and pitch on C*F*~0~. 
+If the previous findings of more extensive C*F*~0~ under focus are actually due to synergistic effects of multiple sources of pitch raising, we should find stronger C*F*~0~ effects in Jutland Danish compared to Zealand Danish, at least in syllables without stød.
+However, if the findings are actually due to focus and not pitch, the varieties are expected to show similar behavior.
 
 ## Research questions {#sec-rq}
 
-*RQ*1: What will C*F*~0~ look like in a language which contrasts two series of voiceless stops?
+*RQ*1: What will C*F*~0~ look like in a language which contrasts two series of voiceless stops? (cp. @sec-cf0overview and @sec-review-danish-contrast)
 
-* *H*1~a~: /b d g/ are underlyingly represented as [+voice], which acts as an *F*~0~ depressor even if the stops are phonetically voiceless, and the *F*~0~ levels following consonants is ranked /p ~ m/ > /b/. This would be evidence in favor of the proposal of @kingston1994 regarding the underlying representation of Danish stops.
-* *H*1~b~: *F*~0~ is raised after /p t k/, since the production of these stops (and only these stops) involves tensing of the cricothyroid [following @hutters1984; -@hutters1985], and the *F*~0~ levels following consonants is ranked /p/ > /b ~ m/. This would be evidence in favor of the proposal of @lofqvist1989 that C*F*~0~ is a physiological side effect of inhibiting phonation specifically through cricothyroid tensing.
-* *H*1~c~: *F*~0~ is raised after both stop series, which would be evidence in favor of the proposal of e.g. @goldstein1986 that C*F*~0~ effects are a general physiological side effect of laryngeal gestures that inhibit phonation. The *F*~0~ levels following consonants would then be ranked either /p ~ b/ > /m/ or /p/ > /b/ > /m/, depending on whether the magnitude of the gestures in question is expected to have an observable influence on C*F*~0~. The /p/ > /b/ ordering is not explicitly predicted by @goldstein1986, but arguably follows naturally from their account.
+* *H*1~a~: /b d g/ are underlyingly represented as [+voice], which acts as an *F*~0~ depressor even if the stops are phonetically voiceless, and the *F*~0~ levels following consonants is ranked /p ~ m/ > /b/. 
+* *H*1~b~: *F*~0~ is raised after /p t k/, since this is often found after the 'less voiced' series of stops in languages with two-way contrasts, regardless of how the contrast is otherwise realized, and the *F*~0~ levels following consonants is ranked /p/ > /b ~ m/. 
+* *H*1~c~: *F*~0~ is raised after both stop series, since both stop series are phonetically voiceless. The *F*~0~ levels following consonants would then be ranked either /p ~ b/ > /m/ or /p/ > /b/ > /m/, depending on whether the magnitude of devoicing gestures is expected to have an observable influence on C*F*~0~.
 
-*RQ*2: How do stress and high pitch respectively affect C*F*~0~?^[Note that these hypotheses assume that there is no lowering effect of stops with a proposed [+voice] specification in Danish, i.e. that *H*1~a~ is false; the previous research generally leads us to expect this.]
+*RQ*2: How do focus and high pitch respectively affect C*F*~0~?^[Note that these hypotheses assume that there is no lowering effect of stops with a proposed [+voice] specification in Danish, i.e. that *H*1~a~ is false; the previous research generally leads us to expect this.] (cp. @sec-cf0-pitch and @sec-stresspitch)
 
-* *H*2~a~: C*F*~0~ is generally stronger in speakers from Jutland than speakers from Zealand. This would suggest that stress in itself does not affect C*F*~0~, but high pitch *does*, since stress is not cued with high pitch on the tonic syllable in Zealand Danish.
-* *H*2~b~: C*F*~0~ is enhanced in global high pitch environments in speakers from both Jutland and Zealand. This would suggest that the global pitch environment affects C*F*~0~, but stress in itself does not.
-* *H*2~c~: Both varieties have similar C*F*~0~ effects, and C*F*~0~ is not affected by the global pitch environment in either variety. This would suggest that there is no synergy.
+* *H*2~a~: C*F*~0~ is generally enhanced in speakers from Jutland relative to speakers from Zealand when there is a high pitch target, and high pitch targets enhance C*F*~0~ relative to low pitch targets in speakers from Jutland but not Zealand. This would suggest that focus in itself does not affect C*F*~0~, but a high pitch *does*, since high pitch targets are realized on the post-tonic syllable in Zealand Danish.
+* *H*2~b~: C*F*~0~ is enhanced in global high pitch targets in speakers from both Jutland and Zealand. This would suggest that the global pitch target affects C*F*~0~, but focus in itself does not.
+* *H*2~c~: Both varieties have similar C*F*~0~ effects, and C*F*~0~ is not affected by the global pitch target in either variety. This would suggest that there is no synergy.
 
-*RQ*3: Do lexical demands on pitch level (specifically the stød contrast) affect C*F*~0~?
+*RQ*3: Do lexical demands on pitch level (specifically the stød contrast) affect C*F*~0~? (cp. @sec-cf0-pitch and @sec-review-stod)
 
-* *H*3~a~: C*F*~0~ is stronger in syllables with stød, i.e. C*F*~0~ strengthens when pitch is high, regardless of the source of high pitch.
-* *H*3~b~: C*F*~0~ is stronger in syllables without stød, since the lack of competing demands on the vocal folds allows for more modulation of *F*~0~.
+* *H*3~a~: There is enhancement of C*F*~0~ in syllables with stød, i.e. C*F*~0~ strengthens when pitch is high, regardless of the source of high pitch.
+* *H*3~b~: There is attrition of C*F*~0~ in syllables with stød, since the competing demands on the vocal folds allows for less modulation of *F*~0~.
 * *H*3~c~: C*F*~0~ is not affected by the stød contrast either way.
 
 # Methods and materials {#sec-methods}
@@ -342,7 +323,7 @@ The items of interest were crossed to contain all possible combinations of the f
 * [stød]{.smallcaps}: *present*, *absent*
 
 The test items all have phonologically long vowels in the stressed syllable.^[Some speakers have short vowels in the possessive pronouns *dine* 'yours' and *mine* 'mine'; this is apparently due to a relatively recent change in Zealand Danish [@schachtenhaufen2024].]
-Most items were disyllabic with stress on the first syllable; a few were trisyllabic, with stress either on either the second or the first syllable.
+Most items were disyllabic with stress on the first syllable; a few were trisyllabic, with stress either on the second or the first syllable.
 
 Alternative question sentences were constructed around the test words.
 Most items contained only one item of interest, in order to ensure that the sentence sounded relatively pragmatically natural, but when feasible, sentences contained two items of interest.
@@ -569,7 +550,7 @@ In order to more precisely delimit the locations of stops, we used the `getVOT` 
 Prior to this, a bandpass filter was applied with cut-off frequencies of 50 Hz (abrupt) and 10,000 Hz (with a 100 Hz smooth Gaussian filter) using the `soundgen` library to eliminate an occasional low-frequency rumble and speed up the process.
 `getVOT` is a simple utility that automatically searches for those landmarks in the speech signal that are typically manually annotated from inspecting the waveform: a sudden amplitude peak after a period of silence corresponding to the beginning of the release, and the onset of periodicity (operationalized here as increased autocorrelation of the signal) corresponding to the onset of voicing. 
 There are multiple parameters that can be toggled to improve results, but `getVOT` has a function for automatically estimating optimal parameters from a few (typically less than 10) representative hand-annotated tokens.
-`getVOT` may not be as precise as more sophisticated tools such as AutoVOT [@sonderegger2012] or Dr.VOT [@shrem2019], but it has the advantage of being very easy to set up and run, and of interacting directly with EMU-SDMS, which arguably makes it more suitable for medium-size datasets.
+`getVOT` may not be as precise as more sophisticated tools such as AutoVOT [@sonderegger2012] or Dr.VOT [@shrem2019], but it has the advantage of being very easy to set up and run, and of interacting directly with EMU-SDMS.
 
 ::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="true"}
@@ -664,7 +645,44 @@ addVOT2emuDB(db, sl, level='word', sign='positive', pos_params_list=params)
 :::
 :::
 
-Finally, all relevant boundaries -- i.e., the beginning of the closure, the end of the closure, the end of the word, and onset of voicing after /b d p t/ -- were manually checked and adjusted when necessary, based primarily on visual inspection of the waveform.
+Finally, all relevant boundaries -- i.e., the beginning of the closure, the end of the closure, the end of the word, and onset of voicing after /b d p t/ -- were manually checked and adjusted when necessary, based primarily on visual inspection of the waveform. Examples of the resulting annotations for each segment category can be seen in @fig-landmarks, where *clo* indicates the beginning of the closure, *rel* indicates the release, *vo* indicates the voicing onset, and *offset* indicates the end of the word.
+
+```{r}
+#| label: fig-landmarks
+#| fig-cap: Examples of annotation landmarks for each segment category. Note that the symbol [ˀ] in the transcriptions indicate stød. Plotted in R using the `praatpicture` library [@praatpicture].
+#| fig-subcap: 
+#|  - Nasal
+#|  - Unaspirated stop
+#|  - Aspirated stop
+#| fig-height: 3.5
+#| layout-ncol: 1
+#| layout-nrow: 3
+
+library(praatpicture)
+
+emupicture(db, session = '_0004', 
+           bundle = '004Nilen-nasal-alv-high-st-NA-NA-NA-NA-NA', 
+           start = 2, end = 2.65, spec_freqRange = c(0, 6000),
+           tg_tiers = 'landmarks', tg_focusTierLineType = 'solid', 
+           tg_focusTierColor = 'blue', tg_tierNames = F, 
+           proportion = c(3, 5, 1), 
+           mainTitleAlignment = 0.5, mainTitle = 'Nilen [ˈniːˀln̩]')
+emupicture(db, session = '_0004', 
+           bundle = '004bilen-unasp-bilab-high-st-NA-NA-NA-NA-NA', 
+           start = 2.4, end = 2.95, spec_freqRange = c(0, 6000),
+           tg_tiers = 'landmarks', tg_focusTierLineType = 'solid', 
+           tg_focusTierColor = 'blue', tg_tierNames = F, 
+           proportion = c(3, 5, 1), 
+           mainTitleAlignment = 0.5, mainTitle = 'bilen [ˈpiːˀln̩]')
+emupicture(db, session = '_0004', 
+           bundle = '004pilen-asp-bilab-high-st-NA-NA-NA-NA-NA', 
+           start = 1.4, end = 2.15, spec_freqRange = c(0, 6000),
+           tg_tiers = 'landmarks', tg_focusTierLineType = 'solid', 
+           tg_focusTierColor = 'blue', tg_tierNames = F, 
+           proportion = c(3, 5, 1), 
+           mainTitleAlignment = 0.5, mainTitle = 'pilen [ˈpʰiːˀln̩]')
+```
+
 
 ::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="true"}
@@ -881,6 +899,7 @@ reaper2ssff(reaper_out, db)
 To cross-validate the resulting pitch measures, we analyze only measurements from frames where both trackers successfully estimated pitch, and where the estimates are no further than 20% apart.
 For the remaining frames, we analyze the arithmetic mean of the two pitch estimates.
 Prior to analysis, the Hz values of trajectories to be analyzed are converted to by-speaker *z*-scores, and in order to filter out octave jumps, trajectories were removed if they included changes of ±1.5 *z* between any adjacent measures.
+While octave jumps may well reflect sudden shifts in the rate of vocal fold vibration [@talkin1995; @watkins2024], we opt to filter them out here since such sudden shifts cannot be adequately modelled using the statistical methodology presented below.
 
 ::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="true"}
@@ -1035,7 +1054,7 @@ In total, 4,168 pitch trajectories were analyzed, yielding a total of 280,767 pi
 ## Determining the domain of analysis {#sec-methods-domain}
 
 Recall from @sec-cf0overview that @xu2021 have proposed that pitch trajectories are always synchronized to full syllables, and as a result, studies of C*F*~0~ should compare trajectories starting at the syllable onset and *not* at the onset of voicing to avoid overestimating C*F*~0~ effects.^[As discussed above, this study operationalizes the onset of voicing as the onset of periodicity in the waveform following the stop release. This does not necessarily correspond to the beginning of the vowel, which @fischerjorgensen1981aripuc have argued comes later, particularly after aspirated stops.]
-In order to evaluate whether the syllabic or the onset of voicing is the optimal starting point for comparing pitch trajectories in the present study, we carried out some exploratory analyses.
+In order to evaluate whether the syllabic onset or the onset of voicing is the optimal starting point for comparing pitch trajectories in the present study, we carried out some exploratory analyses.
 
 ::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="true"}
@@ -1061,7 +1080,7 @@ First, we checked whether the total durations of our words our words -- i.e., th
 The word durations with nasal and unaspirated onsets are very similar (means = 391 ms and 388 ms, respectively), but words with aspirated onsets have systematically much longer durations (mean = 440 ms).
 The mean *vowel durations*, on the other hand -- i.e., the duration of trajectories beginning at the onset of voicing -- *are* roughly comparable across onset categories (nasals = 314 ms, unaspirated = 304 ms, aspirated = 310 ms).
 The distributions of trajectory durations using different landmarks are shown in @fig-durdist. 
-This intuitively makes it seem likelier that pitch peaks are also timed to the onset voicing.
+This intuitively makes it seem likelier that pitch peaks are also timed to the onset of voicing.
 
 ```{r}
 #| label: fig-durdist
@@ -1176,7 +1195,7 @@ dat <- dat %>% filter(m < 1.5)
 To check whether this is indeed the case, we plot some representative trajectories.
 @fig-landmarkcomp shows smoothed *F*~0~ trajectories of the words in the high pitch condition in the subgroup of speakers from Jutland. 
 The figure shows that, on a raw time scale, prominent peaks and valleys are systematically misaligned across onset categories if trajectories begin at the syllable onset, but they align better after an initial perturbation if trajectories begin at voicing onset. 
-The figure also suggests that any initial influence of aspiration on *F*~0~ would be obscured if trajectories begin at the syllabic onset due to variation in pVOT.
+The figure also suggests that any initial C*F*~0~ effects in /p t k/ would be obscured if trajectories begin at the syllabic onset due to variation in pVOT.
 
 ```{r}
 #| label: fig-landmarkcomp
@@ -1219,7 +1238,7 @@ td_all %>%
 
 The research questions posed in @sec-rq are all statistically tested using a generalized additive mixed model (GAMM).
 GAMMs are highly suitable for modelling data that change over time [@wieling2018], and they have been widely used in the past few years for modelling pitch data, including in studies of C*F*~0~ [e.g. @kirby2022khmu; @ting2023].
-The advantage of using GAMMs over traditional linear mixed-effects regression models in the analysis of time series is that the GAMMs do not restrict the relationship between predictor and response variables to be linear; GAMMs can model data that vary dynamically in time, i.e. complex contour shapes. 
+The advantage of using GAMMs over traditional linear mixed-effects regression models in the analysis of time series is that GAMMs do not restrict the relationship between predictor and response variables to be linear; GAMMs can model data that vary dynamically in time, i.e. complex contour shapes. 
 In this approach, non-linear (or *smooth*) effects are predicted by fitting the data to a series of basis functions (or *splines*). 
 We fit GAMMs using the `mgcv` library in R [@mgcv], which provides a very flexible framework for selecting and combining basis functions, and for penalizing overfitting.
 
@@ -1244,7 +1263,7 @@ F_{0ijk} = \alpha \\
 $$
 
 where $\alpha$ denotes the intercept, $E$ denotes the residual error, $i$ indexes each observation, $j$ indexes each speaker, and $k$ indexes each item. 
-A typical problem with time series analysis is that residual autocorrelation stemming from the high degree of similarity between adjacent measures in time series. 
+A typical problem with time series analysis is residual autocorrelation stemming from the high degree of similarity between adjacent measures in time series. 
 We manage this problem by modulating the error of each observation $e_i$ by the error of the preceding observation $e_{i-1}$ by a factor of $\rho$; this is referred to as an AR(1) error model [@baayen2018; @wieling2018]. Following e.g. @wieling2016, $\rho$ is a fixed value equivalent to the average residual autocorrelation of adjacent measures in a nested model with no correction.
 Residual autocorrelation in the corrected model is negligible.
 A more ideal solution would be to fit the model with by-trajectory factor smooths, which preserves the identity of trajectories in the model and dispenses with the assumption that the degree of autocorrelation is constant [@soskuthy2021]; however, fitting such a model proved to be computationally infeasible.
@@ -1393,7 +1412,7 @@ acf_resid(gam_mod_rho, main = 'Residual autocorrelation')
 
 It is not straightforward to test hypotheses from the non-parametric components of GAMMs. 
 The *F*-test provided by the `mgcv` library essentially tests the significance of the spline fitting procedure [@wood2013], which is typically not something phoneticians have hypotheses about. 
-In this study, hypothesis testing is done through pointwise comparisons of relevant model-predicted trajectories with random effects removed, using the `itsadug` library [@itsadug].
+In this study, hypothesis testing is done through pointwise comparisons of relevant model-predicted trajectories with random effects removed (so-called 'difference smooths'), using the `itsadug` library [@itsadug].
 Comparisons are considered significant at time points where the predicted 95% confidence intervals do not overlap. 
 
 ::: {.content-visible when-format="html"}
@@ -1593,7 +1612,7 @@ Before proceeding to the statistical analysis of C*F*~0~ in @sec-res-cf0, in thi
 A core assumption of *RQ*2 is that the aspiration contrast is comparable in speakers from Jutland and Zealand; if this contrast differs in these two varieties, it would potentially be a major confound. 
 As proxies for this, we plot the distributions of pVOT in @fig-pVOT. 
 The plots show that pVOT is quite similar across varieties; aspirated stops are slightly longer in Jutland varieties, but the difference is below 5 ms on average.
-We also facet this by sentence position, to check whether there are major pVOT differences between words with in the high and low pitch condition, for example due to phrase final lengthening. pVOT appears to be very similar across conditions.
+We also facet this by sentence position, to check whether there are major pVOT differences between words in the high and low pitch condition, for example due to phrase final lengthening. pVOT appears to be very similar across conditions.
 
 ```{r}
 #| label: fig-pVOT
@@ -1850,7 +1869,7 @@ The *F*~0~ differences are given both in terms of standard deviations and in ter
 The results show that both unaspirated and aspirated stops cause C*F*~0~ effects in all conditions, although of differing magnitude and temporal extent.
 *F*~0~ immediately following unaspirated stops is typically closer to aspirated stops than to nasals.
 Unaspirated stops display C*F*~0~ effects of smaller magnitude and shorter temporal extent; this is empirically the case across all conditions, but for some conditions, the difference between the two stop series is negligible and not significant at any point in the trajectories.
-Among Zealand speakers, the C*F*~0~ effects of unaspirated stops is very short-lasting in all conditions. 
+Among Zealand speakers, the C*F*~0~ effects of unaspirated stops are very short-lasting in all conditions. 
 
 If we consider words without stød, the predicted C*F*~0~ effects are stronger in the high pitch condition in terms of both magnitude and temporal extent. 
 Interestingly, in this condition, the significant differences between the two stop series actually last longer than the difference between either stop series and nasals, presumably because of the dip after the initially high *F*~0~.
@@ -1866,45 +1885,54 @@ While C*F*~0~ effects still last longer in aspirated stops than unaspirated stop
 
 Note that in the stød words of Zealand speakers in the high pitch condition, words with nasal onsets appear to have an *F*~0~ dip about halfway through the trajectory that words with obstruent onsets do not share. 
 The global pitch shape in general appears simpler in words with obstruent onsets. 
-We have no hypotheses about this or explanations of it and will not discuss this further; it may be due to pitch tracking issues during the stød phase proper, which is after all expected to be much less modal among speakers from Zealand than speakers from Jutland.
+We have no hypotheses about why this is, nor explanations of it, and will not discuss it any further; it may be due to pitch tracking issues during the stød phase proper, which is after all expected to be much less modal among speakers from Zealand than speakers from Jutland.
 
 In the following section, we will discuss the theoretical implications of these findings in light of the research questions and hypotheses posed in @sec-rq.
 
 # Discussion {#sec-disc}
 
-In this section, we discuss our findings in light of our three research questions in turn: in @sec-disc-rq1, the effect of having two series of voiceless stops, and what the results tell us about general mechanisms of C*F*~0~ in light of the existing studies of how the Danish laryngeal contrast is implemented; in @sec-disc-rq2, we attempt to tease apart the influence of high pitch and focus on C*F*~0~; and in @sec-disc-rq3, we discuss how competing demands on the larynx influence C*F*~0~.
+In this section, we discuss our findings in light of our three research questions in turn: in @sec-disc-rq1, C*F*~0~ in a language with two series of voiceless stops, and whether this can tell us anything about general mechanisms of C*F*~0~ in light of existing studies of how the Danish laryngeal contrast is implemented; in @sec-disc-rq2, we attempt to tease apart the influence of high pitch and focus on C*F*~0~; and in @sec-disc-rq3, we discuss how competing demands on the larynx influence C*F*~0~.
 
 ## Multiple series of voiceless stops and C*F*~0~ {#sec-disc-rq1}
 
 Across all contexts and varieties tested in this study, we find raised *F*~0~ after stop releases relative to a neutral baseline, and we find more raising after aspirated stops, i.e. /p/ > /b/ > /m/, where the difference between two stop series and the nasal is generally greater than the difference between the two stop series.
 These findings reproduce the results of @petersen1983 in a greater range of contexts and with more naturalistic data.
-The findings are in line with *H*1~c~, and are clear evidence against Kingson and Diehl's [-@kingston1994] characterization of Danish stops. 
-Instead, the results support accounts of C*F*~0~ as a predominantly physiological reaction to gestures that inhibit voicing; this is captured in the phonological proposal by @goldstein1986], where the laryngeal contrast is underlyingly represented with continuous gestural scores. 
-This proposal has the added advantage that it is also consistent with the intervocalic voicing patterns for Danish discussed by @puggaardrode2022labphon.
+The findings are in line with *H*1~c~ (devoicing generally raises *F*~0~) and are clear evidence *H*1~a~ (a phonological [+voice] specification in /b d g/ lowers *F*~0~).
+
+As such, the results support accounts of C*F*~0~ as a predominantly physiological effect of gestures that inhibit voicing; this is captured in the phonological proposal by @goldstein1986, where the laryngeal contrast is underlyingly represented with continuous gestural scores. 
+This proposal is also consistent with the intervocalic voicing patterns for Danish discussed by @puggaardrode2022labphon.
 The ranking and internal relationships among segment categories in terms of C*F*~0~ are similar to recent results from Mandarin Chinese [@luo2018; @lo2022], another language which contrasts two series of voiceless stops and where intervocalic voicing is comparatively infrequent [@shih1999; @deterding2007].^[Note that this is particularly found in tonal contexts where *F*~0~ is initially high, and is not reproduced by @guo2022.]
 
 @goldstein1986 do not offer many specific details about how this mechanism would work in practice.
-@lofqvist1989 propose that it follows from tensing of the cricothyroid muscle, but our results do not support this, since the limited available evidence suggests that the cricothyroid is in rest position during the production of Danish /b d g/ [@hutters1985].
-A more likely culprit is suppression of vocalis activity, followed by a sudden increase in activity near the vowel onset to re-initiate voicing, following e.g. @hoole2006; @hutters1985 finds evidence of this behavior in both series of stops, but especially /p t k/, which is in line with differences in magnitude and temporal extent of the reported C*F*~0~ effects.
+@lofqvist1989 propose that C*F*~0~ in English and Dutch follows explicitly from tensing of the cricothyroid muscle, which is implicated in both *F*~0~ control and enforcing voicelessness. 
+@hutters1985 measured the cricothyroid activity in Danish stops using EMG, and her results hint that the cricothyroid is essentially in rest position during the production of /b d g/, while activity is slightly increased in /p t k/.
+While she only has stable measurements from a single speaker, this certainly suggests that cricothyroid tensing is *not* the main driver of devoicing in Danish stops, and that if C*F*~0~ is primarily caused by cricothyroid tensing, we would expect to see relatively limited effects after Danish /p t k/ and no effects at all after /b d g/.
+
+A clear main driver of devoicing in the production of Danish stops is glottal spreading, accomplished by tensing the posterior crycoarytenoids and suppressing activity in the interarytenoids [@hutters1985].
+Another potential driver, according to @hutters1985 and following e.g. @hirose1974, is suppressed activity in the vocalis muscle, which may reduce slackness in the vocal folds and hence impede voicing. 
+Danish stops show an abrupt increase in vocalis activity approaching the vowel onset; as mentioned in @sec-cf0overview, @hoole2006 discusses this as a possible mechanism behind C*F*~0~ [see also @chen2011jphon].
+While @hutters1985 finds evidence of this pattern of vocalis activity in both series of stops, it is especially clear in /p t k/, which is in line with differences in magnitude and temporal extent of the reported C*F*~0~ effects.
 Several studies have found a correlation between vocalis tension and *F*~0~ [e.g. @hirano1969; @atkinson1978; @kempster1988], although the correlation is generally weaker than that between the cricothyroid and *F*~0~.
 According to Titze's body--cover model of pitch control [e.g. @titze1988; @titze1994], the cricothyroid and vocalis jointly control *F*~0~, and in the regular pitch range for speech, increased tension of the vocalis uniformly serves to increase *F*~0~.
-This, of course, does not negate that the cricothyroid is a driver of C*F*~0~ in languages where that muscle is also the main driver of devoicing; the cricothyroid and the vocalis can both contribute to devoicing (although in different ways), so it is very much in line with the prediction of @goldstein1986 that they can both contribute to C*F*~0~ effects.
+This suggests that abrupt increase in vocalis activity drives C*F*~0~ in Danish, but of course does not negate that the cricothyroid is a driver of C*F*~0~ in languages where that muscle is also the main driver of devoicing; the cricothyroid and the vocalis can both contribute to devoicing (although in different ways), so it is very much in line with the prediction of @goldstein1986 that they can both contribute to C*F*~0~ effects.
 
-The effect of aspiration on *F*~0~ is not universal. 
-While aspiration increases *F*~0~ in languages like English, German, and Swedish, as well as Danish, but lowers *F*~0~ in languages like Nepali and Bengali. 
+*F*~0~ is increased after aspirated stops in languages like English, German, and Swedish, as well as Danish, but lowered after aspirated stops in languages like Nepali and Bengali. 
 In yet other languages, like Kurtöp, *F*~0~ appears to be raised after aspirated stops but less so than after plain voiceless stops [@hyslop2024].
-Similarly, syllable final /h/ has been shown to cause *F*~0~ lowering in the preceding vowel in some languages, like Arabic and Itunyuso Trique [@hombert1979; @dicanio2012], whereas in other languages, e.g. Eastern Khmu, it causes *F*~0~ raising [@kirby2024].
-In other words, glottal spreading (achieved through tensing of the posterior cricoarytenoids) does not appear to lead to a specific *F*~0~ pattern, but rather, the various C*F*~0~ affects are likely the result of other concomitant laryngeal gestures (such as cricothyroid tensing, or suppression followed by rapid activation of the vocalis).
+On a similar note, syllable final /h/ has been shown to correlate with *F*~0~ lowering in the preceding vowel in some languages, like Arabic and Itunyuso Trique [@hombert1979; @dicanio2012], whereas in other languages, e.g. Eastern Khmu, it correlates with *F*~0~ raising [@kirby2024].
+This arguably makes it unlikely that aspiration -- either in terms of physiology or aerodynamic side effects -- is a main driver of C*F*~0~, in Danish or otherwise. Rather, the various C*F*~0~ effects of aspirated stops are likely the result of other concomitant laryngeal gestures (such as cricothyroid tensing, or suppression followed by rapid activation of the vocalis).
 
-It should be noted that a short *F*~0~ rise after voiceless unaspirated stops have also sometimes been noted in languages where there is no indication of an active devoicing gesture, predominantly English [@ohde1984; @hanson2009; @xu2021], but also at least empirically in some varieties of German [@pohnlein2023]. 
+It should be noted that a short *F*~0~ rise after voiceless unaspirated stops has also sometimes been noted in languages where there is no indication of an active devoicing gesture, predominantly English [@ohde1984; @hanson2009; @xu2021], but also at least empirically in some varieties of German [@pohnlein2023].
 @xu2021 suggest that such an initial peak is found because the very first glottal cycles involve only the outer layer of the vocal folds, which vibrate at a higher natural frequency than the main vocal folds due to smaller mass, triggering *F*~0~ generated at the falsetto register. 
 This is arguably unlikely to be the explanation for the Danish findings presented here, as it is unlikely that our cross-validation method for pitch tracking will have picked this up; Praat's autocorrelation method (using standard settings which penalize rapid changes in the predicted pitch contour) is probably not well-suited for capturing one or very few initial glottal cycles that are very different from subsequent cycles. 
-Additionally, it is not clear how Xu and Xu's [-@xu2021] proposal capture the relatively large differences in onset *F*~0~ after the different stop series.
 
-## C*F*~0~, stress, and intonation {#sec-disc-rq2}
+Notably, the situation in Swiss German is quite similar to Danish, since this language also contrasts (at least) two series of voiceless stops: voiceless short (or lenis) unaspirated, voiceless long (or fortis) unaspirated, and in subsets of the lexicon, voiceless aspirated [see @ladd2018]. 
+@zebesheng2025 show that long unaspirated and aspirated stops have a similar influence on *F*~0~, while the raising effect of short unaspirated stops has a smaller magnitude and shorter duration. 
+It is unclear whether these effects are caused by the same mechanisms as in Danish, since less is known about mechanisms of devoicing in Swiss German, but in any case, these results are also in line with our *H*1~c~, i.e. that devoicing generally raises *F*~0~.
+
+## C*F*~0~, focus, and pitch targets {#sec-disc-rq2}
 
 The design of the current study was motivated by studies, predominantly from the 1980s, showing that the pitch peak placement in a stress group falls much earlier in Jutland Danish than Copenhagen Danish. 
-While we do find an earlier pitch peak in Jutland Danish, both speaker groups appear to have peak delay in the current study, possibly due to incipient change that causes Jutland Danish to become more similar to Standard Copenhagen Danish, but it would require more research to state this with any degree of certainty.
+While we do find an earlier pitch peak in Jutland Danish, both speaker groups appear to have peak delay in the current study, possibly due to incipient change that causes Jutland Danish to approach Standard Copenhagen Danish, but we cannot say this with any degree of certainty.
 In any case, this makes it difficult to directly test the hypotheses associated with our *RQ*2, i.e. to tease apart the influence of high pitch and focus on C*F*~0~ effects.
 Luckily, our design affords some other ways to approach this.
 
@@ -1913,39 +1941,37 @@ Even so, C*F*~0~ effects are stronger when there is a global intonational high p
 We cannot straightforwardly interpret this as a synergy effect between a high pitch target and the direction of C*F*~0~ [as discussed by @chen2011jphon], as we would presumably not expect C*F*~0~ synergy unless it co-occurs with a pitch target that is *actually* high.
 Another reason to doubt a straightforward *F*~0~ synergy account of C*F*~0~ enhancement is that we do *not* see C*F*~0~ enhancement in words with stød relative to words without, even though stød words *do* have a high initial pitch target. 
 
-We do, however, find some evidence in favor of both *H*2~a~ and *H*2~b~: when the voice quality is modal, C*F*~0~ effects are generally stronger in speakers from Jutland, and they are generally stronger in global high pitch environments.
-Effects are enhanced in speakers from Jutland (*H*2~a~) in spite of this speaker group displaying an unexpected peak delay in their pitch contours. 
-The pitch contours do remain different across speaker groups though, with Zealand speakers displaying both a later peak and a steaper rise (cf. @fig-baselineTrajs).
-Instead of supporting a straightforward *F*~0~ synergy account, we argue that the group differences arise because the perceptual salience of the pitch rise, i.e. the transition from low to high pitch, is higher in Zealand Danish.
+We do, however, find some evidence in favor of both *H*2~a~ and *H*2~b~: when the voice quality is modal, C*F*~0~ effects are generally stronger in speakers from Jutland (*H*2~a~), and they are generally stronger in global high pitch environments (*H*2~b~).
+Effects are enhanced in speakers from Jutland in spite of this speaker group displaying an unexpected peak delay in their pitch contours. 
+In spite of this peak delay in Jutland speakers, pitch contours remain different across speaker groups, with Zealand speakers displaying both a later peak and a steeper rise (cf. @fig-baselineTrajs).
+Instead of supporting a straightforward *F*~0~ synergy account, we suggest that the group differences arise because of the perceptual salience of the pitch rise, i.e. the transition from low to high pitch, is higher in Zealand Danish.
 This would explain why *F*~0~ after aspirated stops typically falls to a low position and then rises, unlike in Jutland Danish, where the results suggest that the pitch rise is optional after aspirated stops.
-Meanwhile, effects are enhanced in a global high pitch environment (*H*2~b~).
-We discussed above why this is likely not due to *F*~0~ synergy per se, since the local pitch target is not high in modal syllables, and the enhancement disappears in stød syllables where there *is* a local high pitch target. 
+Meanwhile, effects are enhanced in a global high pitch environment (*H*2~b~), although only very marginally so for /b d g/.
+We discussed in @sec-disc-rq1 why this is likely not due to *F*~0~ synergy per se, since the local pitch target is not high in modal syllables, and any such enhancement disappears in stød syllables where there *is* a local high pitch target. 
 A more likely explanation is that *some* sources of high *F*~0~, but not all, serve to enhance C*F*~0~, and this depends not on *F*~0~ itself but rather synergy at the level of laryngeal implementation.
 
 ## C*F*~0~ and other demands on the vocal folds {#sec-disc-rq3}
 
-The patterns in the results that we have yet to discuss can arguably be explained if we assume that C*F*~0~ effects can be constrained if there are pre-existing demands on the vocal folds. 
-As discussed in @sec-universality, there is ample support for this from tone languages, where C*F*~0~ effects often vary in scope, magnitude, and even direction based on the tonal context [for an overview, see @kirby2018jphon].
+The relationship between C*F*~0~ and stød can arguably be explained if we assume that C*F*~0~ effects can be constrained if there are pre-existing demands on the vocal folds. 
+As discussed in @sec-cf0overview, there is ample support for this from tone languages, where C*F*~0~ effects often vary in scope, magnitude, and even direction based on the tonal context [for an overview, see @kirby2018jphon].
 
-As mentioned above, we do not find direct evidence of a synergistic effect where C*F*~0~ is enhanced in high pitch contexts, as discussed by e.g. @chen2011jphon.
+We do not find direct evidence of a synergistic effect where C*F*~0~ is enhanced in high pitch contexts, as discussed by e.g. @chen2011jphon.
 There is certainly no evidence for this in words with stød, where there is attrition of C*F*~0~ effects even though they consistently have higher *F*~0~ onset than words without it. 
-In Fischer-Jørgensen's [-@fischerjorgensen1987; -@fischerjorgensen1989] physiological study of stød, the pitch contour in syllables with stød can straightforwardly be explained with reference to activation level of the cricothyroid muscle. 
-Since the cricothyroid does not appear to play a major role in regulating the laryngeal contrast, it stands to reason that there is no strong synergistic effect of cricothyroid activation.
+In Fischer-Jørgensen's [-@fischerjorgensen1974stod; -@fischerjorgensen1987; -@fischerjorgensen1989] physiological study of stød, the pitch contour in syllables with stød can straightforwardly be explained with reference to activation level of the cricothyroid muscle. 
+Since the cricothyroid does not appear to play a major role in regulating the laryngeal contrast (see @sec-disc-rq1), it stands to reason that there is no strong synergistic effect of cricothyroid activation.
 If we assume that the vocalis is a driver of C*F*~0~ effects in Danish, it further stands to reason why effects would be attenuated in the stød context: following Titze's body--cover model (see @sec-disc-rq1), there is a complex interaction between the influence of cricothyroid and vocalis tension in pitch control, such that the effect of increased vocalis activity on pitch is reduced if it co-occurs with strong cricothyroid activity [@titze1989]. 
 
 In addition to strong initial cricothyroid activity, Fischer-Jørgensen [-@fischerjorgensen1987; -@fischerjorgensen1989] also finds that the second phase of stød is accomplished with strong coactivation of the vocalis and lateral cricoarytenoids. 
-Comparing the results of @hutters1985 and Fischer-Jørgensen [-@fischerjorgensen1987; -@fischerjorgensen1989], the activation of the vocalis required for the second stød phase is much stronger than the peak found immediately after a voiceless stop.
+Comparing the results of @hutters1985 and Fischer-Jørgensen [-@fischerjorgensen1987; -@fischerjorgensen1989], the activation of the vocalis required for the second stød phase appears to be much stronger than the peak found immediately after a voiceless stop.
 This corresponds well to the finding that the vocalis tension, especially at high levels, can either raise or lower *F*~0~ depending on the overall state of the glottis [@titze1989]. 
-Very simply put, stød places a range of complicated phonological demands on the larynx, and our results suggest that this reduces the capability of C*F*~0~ effects to be temporally extensive.
-Such a mechanism can also help explain why C*F*~0~ effects appear to be *more* extensive in when stød is found in the low pitch condition; the pitch range is generally reduced here, so it is likely that the laryngeal adjustments required for stød are also weaker, allowing greater range for the C*F*~0~ effects.
-These results support *H*3~b~.
+Very simply put, stød places a range of complicated demands on the larynx, and our results suggest that this reduces the capability of C*F*~0~ to be temporally extensive.
+Such a mechanism can also help explain why C*F*~0~ effects appear to be *more* extensive when stød is found in the low pitch condition; the pitch range is generally reduced here, so it is likely that the laryngeal adjustments required for stød are also weaker, allowing greater range for the C*F*~0~ effects.
+These results support *H*3~b~ (attrition of C*F*~0~ in syllables with stød).
 
 # Conclusion
 
 In this paper, we have revisited co-intrinsic pitch effects in Danish, a language with two series of contrastive voiceless stops. 
 We found that both series of stops increase the pitch of the following vowel relative to a neutral baseline, although the aspirated and unaspirated series differ in terms of magnitude and temporal extent.
-This result challenges accounts of co-intrinsic pitch as primarily a result of cricothyroid tensing to enforce voicelessness, since previous research suggests that the cricothyroid is essentially in rest position during the production of Danish unaspirated stops.
-Our results are more in line with co-intrinsic pitch being caused by a sudden activation of the vocalis muscle after a period of suppression, although the exact biomechanical cause of co-intrinsic pitch in Danish is a topic we leave for further investigation.
 
-In order to test how co-intrinsic pitch is affected by the phonological context in various ways, we varied the intonational pitch context and phonological voice quality of items, and recruited speakers of different varieties of Danish which do not appear to differ in the implementation of laryngeal contrast, but differ in terms of prosodic phonology.
-The upshot is that we do not find evidence of co-intrinsic pitch being enhanced in high pitch environments as has previously been suggested, but rather we find evidence that co-intrinsic pitch is inhibited or strengthened based on the phonological source of high pitch, presumably because the laryngeal mechanisms inducing high pitch differ.
+In order to test how co-intrinsic pitch is affected by the phonological context in various ways, we varied the intonational pitch context and phonological voice quality of items, and recruited speakers of different varieties of Danish which do not appear to differ in the implementation of laryngeal contrast, but differ in terms of prosodic phonology (although less so than previously described).
+The upshot is that we do not find consistent evidence of co-intrinsic pitch being enhanced in high pitch environments, but rather that co-intrinsic pitch is inhibited or enhanced based on the source of high pitch.
