@@ -1,0 +1,27 @@
+---
+title: "The source and significance of co-intrinsic pitch. New evidence from Danish"
+format:
+  html:
+    theme: cosmo
+bibliography: references.bib
+csl: css/journal-of-linguistics.csl
+---
+
+Poster available [here](https://rpuggaardrode.github.io/cf0dan/pape.pdf){target='_blank'}
+
+Code embedded in paper manuscript available from [GitHub](https://github.com/rpuggaardrode/cf0dan){target='_blank'}, raw data and fitted statistical models available from the [OSF](https://doi.org/10.17605/OSF.IO/67SHC){target='_blank'}.
+
+## Software citations
+
+* SpeechRecorder: @speechrecorder
+* Autophon: @danfa, @autophon, @danfa
+* `R` version 4.5.0: @r
+* Praat version 6.4.1: @boersma2001
+* `getVOT`: @getVOT
+* `reaper`: @reaper
+* `mgcv`: @mgcv, @bam
+
+---
+nocite: |
+  @kingston1994, @goldstein1986, @lofqvist1989, @hutters1985, @fischerjorgensen1989, @wieling2016
+---
