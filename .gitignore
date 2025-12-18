@@ -2,7 +2,7 @@
 .Rdata
 .Rhistory
 cf0dan.Rproj
-index.html
+final_emuDB/*
 index.log
 index.tex
 .Rproj.user
@@ -13,3 +13,7 @@ data/gam_maxre_rho.Rda
 data/gam_rawtime.Rda
 data/gam_st.Rda
 dc.Rda
+psout.Rda
+cf0dan_response.pdf
+DaTa*
+for_typesetters/*
